@@ -1,8 +1,8 @@
 // src/pages/Home.js
 import React from 'react';
-import NavBar from '../components/NavBar';
-import ChatsSection from '../components/ChatsSection';
-import ChatScreen from '../components/ChatScreen';
+import NavBar from '../components/NavBar.js';
+import ChatsSection from '../components/ChatsSection.js';
+import ChatScreen from '../components/ChatScreen.js';
 import styled from 'styled-components';
 
 const HomeContainer = styled.div`
