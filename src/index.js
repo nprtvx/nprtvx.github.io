@@ -6,5 +6,5 @@ ReactDOM.render(
   <React.StrictMode>
     <Home />
   </React.StrictMode>,
-  document.getElementById('neon-monkey-popeye-1269-232629')
+  document.getElementById('root')
 );
