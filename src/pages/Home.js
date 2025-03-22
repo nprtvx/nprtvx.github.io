@@ -21,7 +21,14 @@ const Home = () => {
   return (
     <>
     <img src="../../../public/media/logo.svg" alt="logo"/>
-    <HomeContainer>
+    <img src="../../../public/media/Another.svg" alt="logo"/>
+    </>
+  );
+};
+
+/*
+
+<HomeContainer>
       <NavBar />
       <MainContent>
         <h2>welcome to all the enthusiasts</h2>
@@ -29,8 +36,7 @@ const Home = () => {
         <ChatScreen />
       </MainContent>
     </HomeContainer>
-    </>
-  );
-};
+
+*/
 
 export default Home;
