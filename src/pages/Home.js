@@ -19,7 +19,7 @@ const MainContent = styled.div`
 
 const Home = () => {
   return (
-    <img src="../../public/media/logo.svg" alt="logo"/>
+    <img src="../../../public/media/logo.svg" alt="logo"/>
     <HomeContainer>
       <NavBar />
       <MainContent>
