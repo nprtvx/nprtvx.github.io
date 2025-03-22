@@ -19,6 +19,7 @@ const MainContent = styled.div`
 
 const Home = () => {
   return (
+    <>
     <img src="../../../public/media/logo.svg" alt="logo"/>
     <HomeContainer>
       <NavBar />
@@ -28,6 +29,7 @@ const Home = () => {
         <ChatScreen />
       </MainContent>
     </HomeContainer>
+    </>
   );
 };
 
