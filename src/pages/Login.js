@@ -1,6 +1,6 @@
 // src/pages/Login.js
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled from 'styledcomponents';
 
 const LoginContainer = styled.div`
   display: flex;
