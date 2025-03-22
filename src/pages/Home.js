@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from '../components/NavBar.js';
 import ChatsSection from '../components/ChatsSection.js';
 import ChatScreen from '../components/ChatScreen.js';
-import styled from 'styledcomponents.js';
+import styled from 'styled-components.js';
 
 const HomeContainer = styled.div`
   display: flex;
