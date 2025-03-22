@@ -22,6 +22,7 @@ const Home = () => {
     <HomeContainer>
       <NavBar />
       <MainContent>
+        <h2>welcome to all the enthusiasts</h2>
         <ChatsSection />
         <ChatScreen />
       </MainContent>
