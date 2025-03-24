@@ -1,7 +1,7 @@
 {
   "name": "neon monkey",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "homepage": "https://nprtvx.github.io",
   "scripts": {
     "start": "react-scripts start",
