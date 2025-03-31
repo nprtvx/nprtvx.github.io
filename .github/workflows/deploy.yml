@@ -25,7 +25,9 @@ jobs:
         run: npm install @reduxjs/toolkit@latest @testing-library/jest-dom@latest @testing-library/react@latest @testing-library/user-event@latest axios@latest react@latest react-dom@latest react-redux@latest react-router-dom@latest react-scripts@latest typescript@latest web-vitals@latest styled-components@latest tailwindcss@latest gh-pages@latest
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install typescript@4.9.3
+          npm install --force
 
       - name: Install gh-pages
         run: npm install gh-pages --save-dev
