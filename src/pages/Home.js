@@ -28,6 +28,8 @@ const Home = () => {
     <p>welcome to neon monkey</p>
     <img src="../../../public/media/logo.svg" alt="logo"/>
     <img src="../../../public/media/Another.svg" alt="logo"/>
+    <p>just a test site</p>
+
     </>
   );
 };
