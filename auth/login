@@ -9,7 +9,7 @@
     <meta property="og:url" content="https://nprtvx.github.io">
     <title>Log In - Neon Monkey</title>
     <link rel="icon" type="image/svg+xml" href="./media/logo.svg">
-<!--     <link rel="stylesheet" href="/static/style.css"> -->
+    <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
     <nav>
