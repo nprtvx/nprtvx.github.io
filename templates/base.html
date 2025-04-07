@@ -1,12 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="cyber monkeys"> <meta name="keywords" content="neon, monkey, cyber">
+    <meta name="author" content="neonmonkey08@gmail.com"> <meta property="og:title" content="Neon Monkey">
+    <meta property="og:description" content="cyber monkeys"> <meta property="og:image" content="./media/logo.svg">
+    <meta property="og:url" content="https://nprtvx.github.io">
     <title>{% block title %}{% endblock %} - Neon Monkey</title>
+    <link rel="icon" type="image/svg+xml" href="./media/logo.svg">
 <!--     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
   </head>
   <body>
     <nav>
-      <h1>Flaskr</h1>
+      <h1>neon monkey</h1>
       <ul>
         {% if g.user %}
         <li><span>{{ g.user['username'] }}</span>
