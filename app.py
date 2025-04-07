@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask
 from flask_frozen import Freezer
 
 app = Flask(__name__)
@@ -6,7 +6,7 @@ freezer = Freezer(app)
 
 @app.route('/')
 def index():
-    return render_template('./public/index.html')
+    return '<h2>ello world</h2>'
 
 if __name__ == '__main__':
     freezer.freeze()
