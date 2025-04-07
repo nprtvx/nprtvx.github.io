@@ -27,7 +27,7 @@ jobs:
         source venv/bin/activate
         python -m pip install --upgrade pip
         pip install Flask
-        pip install Flask-Frozen
+        pip install Frozen-Flask
 
     - name: Build static files
       run: |
