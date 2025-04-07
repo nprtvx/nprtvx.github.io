@@ -1,9 +1,11 @@
 import sys
 from flask import Flask, render_template
 from flask_frozen import Freezer
+from . import auth
 
 app = Flask(__name__)
 app.config['FREEZER_DESTINATION'] = 'build'
+app.register_blueprint(auth.bp)
 
 @app.route('/')
 def index():
