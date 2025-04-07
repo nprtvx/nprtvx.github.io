@@ -7,7 +7,7 @@
     <meta name="author" content="neonmonkey08@gmail.com"> <meta property="og:title" content="Neon Monkey">
     <meta property="og:description" content="cyber monkeys"> <meta property="og:image" content="./media/logo.svg">
     <meta property="og:url" content="https://nprtvx.github.io">
-    <title>Home - Neon Monkey</title>
+    <title>Register - Neon Monkey</title>
     <link rel="icon" type="image/svg+xml" href="./media/logo.svg">
 <!--     <link rel="stylesheet" href="/static/style.css"> -->
   </head>
@@ -24,12 +24,18 @@
     <section class="content">
       <header>
         
-  <h1>Home</h1>
+  <h1>Register</h1>
 
       </header>
       
       
-  <div id="root" role="main"></div>
+  <form method="post">
+    <label for="username">Username</label>
+    <input name="username" id="username" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+    <input type="submit" value="Register">
+  </form>
 
     </section>
   </body>
