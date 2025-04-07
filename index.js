@@ -6,11 +6,10 @@ import App from './src/App';
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
-  root
+  </React.StrictMode>
 );
