@@ -1,5 +1,5 @@
 import sys
-from flask import Flask
+from flask import Flask, render_template
 from flask_frozen import Freezer
 
 app = Flask(__name__)
@@ -7,7 +7,7 @@ app.config['FREEZER_DESTINATION'] = 'build'
 
 @app.route('/')
 def index():
-    return '<h2>ello world</h2>'
+    return render_template('index.html')
 
 @app.route('/about')
 def about():
