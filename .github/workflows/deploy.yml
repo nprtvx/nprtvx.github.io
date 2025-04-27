@@ -31,6 +31,7 @@ jobs:
     - name: Build static files
       run: |
         source venv/bin/activate
+        export FLASK_ENV=production
         python app.py freeze
 
     - name: Deploy to GitHub Pages
