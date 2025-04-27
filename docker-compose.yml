@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    networks:
+      - nm-proxy
+    ports:
+      - "8080:80"
+      - "8443:443"
+    volumes:
+      - /etc/nginx/certs:/etc/nginx/certs:ro
+      - /etc/nginx/vhost.d:/etc/nginx/vhost.d:ro
+      - /usr/share/nginx/html:/usr/share/nginx/html:ro
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  letsencrypt-nginx-proxy-companion:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    container_name: letsencrypt-nginx-proxy-companion
+    networks:
+      - nm-proxy
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /etc/nginx/certs:/etc/nginx/certs:rw
+    environment:
+      - DEFAULT_EMAIL=neonmonkey08@gmail.com
+    depends_on:
+      - nginx-proxy
+
+  n8n:
+    image: n8nio/n8n
+    container_name: n8n
+    networks:
+      - nm-proxy
+    environment:
+      - VIRTUAL_HOST=n8n.neonmonkey.in
+      - LETSENCRYPT_HOST=n8n.neonmonkey.in
+      - LETSENCRYPT_EMAIL=neonmonkey08@gmail.com
+    volumes:
+      - n8n_data:/data
+
+  synapse:
+    image: matrixdotorg/synapse:latest
+    container_name: synapse
+    networks:
+      - nm-proxy
+    environment:
+      - VIRTUAL_HOST=matrix.neonmonkey.in
+      - LETSENCRYPT_HOST=matrix.neonmonkey.in
+      - LETSENCRYPT_EMAIL=neonmonkey08@gmail.com
+    volumes:
+      - synapse_data:/data
+
+  element:
+    image: vectorim/element-web
+    container_name: element
+    networks:
+      - nm-proxy
+    environment:
+      - VIRTUAL_HOST=neonmonkey.in
+      - LETSENCRYPT_HOST=neonmonkey.in
+      - LETSENCRYPT_EMAIL=neonmonkey08@gmail.com
+    volumes:
+      - element_data:/data
+
+networks:
+  nm-proxy:
+    external: true
+
+volumes:
+  n8n_data:
+  synapse_data:
+  element_data:
