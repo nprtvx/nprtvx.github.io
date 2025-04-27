@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Chat App</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.min.js" integrity="sha512-..." crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Flask Real-Time Chat</h1>
+    <div id="chat">
+        <div id="messages"></div>
+        <input id="message" type="text" placeholder="Type a message...">
+        <button id="send">Send</button>
+    </div>
+    <script>
+        const socket = io();
+
+        document.getElementById('send').onclick = () => {
+            const message = document.getElementById('message').value;
+            socket.send(message);
+            document.getElementById('message').value = '';
+        };
+
+        socket.on('message', (msg) => {
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = msg;
+            document.getElementById('messages').appendChild(messageDiv);
+        });
+    </script>
+</body>
+</html>
