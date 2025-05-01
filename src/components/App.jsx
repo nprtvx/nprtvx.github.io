@@ -5,8 +5,8 @@ const App = () => {
     return (
         <div className="App">
             <header className="App-header">
-                <h1>Welcome to My React App</h1>
-                <p>This is a simple React application deployed using GitHub Actions.</p>
+                <h1>Wneon monkey</h1>
+                <p>welcome to the chat application!</p>
             </header>
         </div>
     );
