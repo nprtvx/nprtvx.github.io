@@ -1,6 +1,5 @@
 import os
 
-__NAME_OF_THE_APP = str('neon monkey'.title())
 class Style:
     def __init__(self, body_bg="#261192", text_color="#abcdef", extra_css=""):
         self.body_bg = body_bg
@@ -34,13 +33,13 @@ class Page:
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{self.title if self.title != "Home" else __NAME_OF_THE_APP +" | "+ self.title}</title>
+  <title>{str('neon monkey'.title()) +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
   <style>
   {self.style.render()}
   </style>
 </head>
 <body>
-  <h1>{self.title if self.title != "Home" else __NAME_OF_THE_APP}</h1>
+  <h1>{self.title if self.title != "Home" else str('neon monkey'.title())}</h1>
   {self.body}
   <div>{links_html}</div>
 </body>
