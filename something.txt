@@ -1,0 +1,11 @@
+#261192 - primary/background color
+#66baab - complementary color
+#c5fcef - backgrounds or subtle highlights to enhance readability and visual breathing space
+#4d8075 secondary/accent color
+
+
+Primary/background: #261192
+Main text: #c5fcef
+Complementary (headings): #66baab
+Secondary/accent (links): #4d8075
+Highlight/background: #c5fcef
