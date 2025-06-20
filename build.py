@@ -26,7 +26,6 @@ def copy_assets():
     print(f"Copied {ASSETS_DIR} to {dst_assets}")
 
 if __name__ == "__main__":
-    import src.write_pages
     copy_templates()
     copy_assets()
     print("Static site generated in", OUTPUT_DIR)
