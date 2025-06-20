@@ -18,6 +18,7 @@ class Style:
         """
 
 class Page:
+    nonlocal __NAME_OF_THE_APP
     def __init__(self, title, body, links=None, style=None, filename="page.html"):
         self.title = title 
         self.body = body
