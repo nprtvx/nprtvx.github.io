@@ -46,8 +46,8 @@ class Page:
 """
 
     def write(self, directory="templates"):
-    path = os.path.join(directory, self.filename)
-    os.makedirs(os.path.dirname(path), exist_ok=True)  # Ensure parent directories exist
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(self.render())
-    print(f"Wrote {path}")
+        path = os.path.join(directory, self.filename)
+        os.makedirs(os.path.dirname(path), exist_ok=True)  # Ensure parent directories exist
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(self.render())
+            print(f"Wrote {path}")
