@@ -29,8 +29,3 @@ contact_page = Page(
     style=contact_style,
     filename="contact.html"
 )
-
-if __name__ == "__main__":
-    pages = [home_page, about_page, contact_page]
-    for page in pages:
-        page.write()
