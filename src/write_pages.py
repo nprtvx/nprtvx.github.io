@@ -1,9 +1,9 @@
 from src.BaseClassesForNM import Page, Style
 
 # Define different styles if needed
-default_style = Style()
-about_style = Style(body_bg="#f0f4ff", text_color="#003366", extra_css="h1 { text-decoration: underline; }")
-contact_style = Style(body_bg="#fffbea", text_color="#705600")
+default_style = Style(extra_css="h1 { text-transform: uppercase; }")
+about_style = Style(extra_css="h1 { text-transform: uppercase; }")
+contact_style = Style(extra_css="h1 { text-transform: uppercase; }")
 
 # Define pages
 home_page = Page(
