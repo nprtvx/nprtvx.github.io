@@ -1,4 +1,5 @@
-from BaseClassesForNM import Page, Style
+from src.BaseClassesForNM import Page, Style
+
 # Define different styles if needed
 default_style = Style()
 about_style = Style(body_bg="#f0f4ff", text_color="#003366", extra_css="h1 { text-decoration: underline; }")
