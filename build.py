@@ -12,12 +12,16 @@ def ensure_dir(path):
 
 def copy_templates():
     ensure_dir(OUTPUT_DIR)
-    for filename in os.listdir(TEMPLATES_DIR):
-        if filename.endswith('.html'):
-            src = os.path.join(TEMPLATES_DIR, filename)
-            dst = os.path.join(OUTPUT_DIR, filename)
-            shutil.copyfile(src, dst)
-            print(f"Copied {src} to {dst}")
+    for root, dirs, files in os.walk(TEMPLATES_DIR):
+        for filename in files:
+            if filename.endswith('.html'):
+                rel_dir = os.path.relpath(root, TEMPLATES_DIR)
+                dest_dir = os.path.join(OUTPUT_DIR, rel_dir)
+                ensure_dir(dest_dir)
+                src = os.path.join(root, filename)
+                dst = os.path.join(dest_dir, filename)
+                shutil.copyfile(src, dst)
+                print(f"Copied {src} to {dst}")
 
 def copy_assets():
     if not os.path.exists(ASSETS_DIR):
