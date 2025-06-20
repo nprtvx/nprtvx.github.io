@@ -1,7 +1,8 @@
 import os
 
+__NAME_OF_THE_APP = str('neon monkey'.title())
 class Style:
-    def __init__(self, body_bg="#fff", text_color="#222", extra_css=""):
+    def __init__(self, body_bg="#261192", text_color="#abcdef", extra_css=""):
         self.body_bg = body_bg
         self.text_color = text_color
         self.extra_css = extra_css
@@ -9,7 +10,7 @@ class Style:
     def render(self):
         return f"""
         body {{
-            background: {self.body_bg};
+            background-color: {self.body_bg};
             color: {self.text_color};
             font-family: Arial, sans-serif;
         }}
@@ -18,7 +19,7 @@ class Style:
 
 class Page:
     def __init__(self, title, body, links=None, style=None, filename="page.html"):
-        self.title = title
+        self.title = title 
         self.body = body
         self.links = links or []
         self.style = style or Style()
@@ -32,13 +33,13 @@ class Page:
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{self.title}</title>
+  <title>{self.title if self.title != "Home" else __NAME_OF_THE_APP +" | "+ self.title}</title>
   <style>
   {self.style.render()}
   </style>
 </head>
 <body>
-  <h1>{self.title}</h1>
+  <h1>{self.title if self.title != "Home" else __NAME_OF_THE_APP}</h1>
   {self.body}
   <div>{links_html}</div>
 </body>
