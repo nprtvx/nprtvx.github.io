@@ -1,5 +1,6 @@
 import os
 import shutil
+from src.write_pages import home_page, about_page, contact_page
 
 TEMPLATES_DIR = 'templates'
 ASSETS_DIR = 'assets'
@@ -26,6 +27,9 @@ def copy_assets():
     print(f"Copied {ASSETS_DIR} to {dst_assets}")
 
 if __name__ == "__main__":
+    pages = [home_page, about_page, contact_page]
+    for page in pages:
+        page.write()
     copy_templates()
     copy_assets()
     print("Static site generated in", OUTPUT_DIR)
