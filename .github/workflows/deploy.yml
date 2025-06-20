@@ -1,27 +1,43 @@
-name: Deploy React App
+name: Deploy Python Static Webapp to GitHub Pages
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main   # Change to your default branch if different
 
 jobs:
-    build-and-deploy:
-        runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v4
-            - name: Set up Node.js
-              uses: actions/setup-node@v4
-              with:
-                node-version: 18
-            - name: Install dependencies
-              run: npm install
-            - name: Build the React app
-              run: npm run build
-            - name: Deploy to GitHub Pages
-              uses: peaceiris/actions-gh-pages@v4
-              with:
-                github_token: ${{ secrets.nprtvx_token }}
-                publish_dir: ./build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Activate a virtual environment
+      - name: Activate venv
+        run: |
+          python -m venv .newvenv
+          source .newvenv/bin/activate
+          
+      # Optional: Install dependencies (uncomment if needed)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Optional: Build static site (replace with your command if needed)
+      - name: Build static site
+        run: |
+          python build.py
+
+      # If your static files are in a folder (e.g., 'static'), deploy that folder.
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.nprtvx_token }}
+          publish_dir: ./static     # Change to your output directory
