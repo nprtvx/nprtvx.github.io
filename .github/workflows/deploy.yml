@@ -34,6 +34,7 @@ jobs:
         run: |
           cd src
           python write_pages.py
+          cd ..
 
       # Optional: Build static site (replace with your command if needed)
       - name: Build static site
