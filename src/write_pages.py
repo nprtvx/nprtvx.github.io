@@ -1,4 +1,4 @@
-from src.BaseClassesForNM import Page, Style
+from BaseClassesForNM import Page, Style
 
 # Define different styles if needed
 default_style = Style()
