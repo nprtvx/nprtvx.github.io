@@ -27,7 +27,7 @@ body = """
 # create page for popeye
 page = Page(
     title="Popeye",
-    body="",
+    body=body,
     links=None,
     style=style,
     filename="popeye/index.html"
