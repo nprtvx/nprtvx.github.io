@@ -5,11 +5,22 @@
 				<title>Neon Monkey | 404</title>
 				<style>
 					
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
         body {
-            background-color: #261192;
+            background-color: #000000;
             color: #abcdef;
             font-family: Arial, sans-serif;
         }
+	#nm-navbar {
+		background-color: #66baab;
+		height: 8vmin;
+		position: sticky;
+		z-axis: 999;
+	}
         
 	h1 {
 		font-size: 8em;
@@ -34,17 +45,36 @@
 		background-color: #66baab;
 	}
 
+	#nm-footer {
+		background-color: #66baab;
+		padding-top: 2em;
+	}
+	#nm-footer h1 {
+		color: #261192;
+		font-size: 2.6rem;
+		padding-bottom: 10px;
+	}
+	#nm-footer-copy {
+		color: #000000;
+		padding: 2em 0;
+	}
         
 				</style>
 			</head>
 			<body>
-				<h1>404</h1>
+				<div id='nm-navbar'>
+					<img src='assets/landing-poster.jpg' id='nm-logo-img' alt=LOGO NM >
+				</div>
 				
 	<div>
 		<h1>404</h1>
 		<p>wanna go home? <a href="/">click here</a></p>
 	</div
 
+				<div id='nm-footer'>
+					<h2>Neon Monkey</h2>
+					<div id='nm-footer-copy'>&copy 2025 NEON MONKEY</div>
+				</div>
 			</body>
 		</html>
 	
