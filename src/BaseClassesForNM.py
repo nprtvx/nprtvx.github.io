@@ -7,61 +7,89 @@ class Style:
         self.extra_css = extra_css
 
     def render(self):
+        self.defaultstyle = f"""
+            * {{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }}
+            
+            body {{
+                background-color: {self.body_bg};
+                color: {self.text_color};
+                font-family: Arial, sans-serif;
+            }}
+            
+            h1 {{
+        		color: #261192;
+        		font-size: xxx-large;
+        	}}
+        """
+        
+        self.logo_img = f"""
+            #nm-logo-img {{
+                width: 100px;
+                height: 100px;
+                border-radius: 0.8rem;
+            }}
+        """
+        
+        self.nm_menu_item = f"""
+            #nm-menu-item {{
+        		text-decoration: none;
+        		font-size: xx-large;
+        		text-transform: capitalize;
+        	}}
+        """
+        
+        self.navbar_menu_nm = f"""
+            #navbar-menu-nm {{
+        		display: flex;
+        		align-items: center;
+        		justify-content: space-between;
+        		width: 50%;
+        		list-style: none;
+        	}}
+            
+            {self.nm_menu_item}
+        """
+        
+        self.navbar = f"""
+            #nm-navbar {{
+                position: sticky;
+                top: 0;
+                padding: 8px 26px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                background-color: #abcdef;
+            }}
+            
+            {self.logo_img}
+            {self.navbar_menu_nm}
+        """
+        
+        self.footer_nm = f"""
+            #nm-footer {{
+        		background-color: #abcdef;
+        		padding-top: 2em;
+        	}}
+        	h2 {{
+        		color: #261192;
+        		font-size: xx-large;
+        		padding-bottom: 10px;
+        	}}
+        	#nm-footer-copy {{
+        		color: #000000;
+        		padding: 2em 0;
+        	}}
+        """
+        
         return f"""
-	* {{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}}
-        body {{
-            background-color: {self.body_bg};
-            color: {self.text_color};
-            font-family: Arial, sans-serif;
-        }}
-	#nm-navbar {{
-		position: sticky;
-		top: 0;
-		padding: 8px 26px;
-		display: flex;
-		align-items: center;
-		justify-content: space-evenly;
-		background-color: #abcdef;
-	}}
-	#nm-logo-img {{
-		width: 50px;
-		height: 50px;
-		border-radius: 0.8rem;
-	}}
-	h1 {{
-		color: #261192;
-		font-size: xxx-large;
-	}}
-	#navbar-menu-nm {{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 50%;
-		list-style: none;
-	}}
-        {self.extra_css}
-	#nm-footer {{
-		background-color: #abcdef;
-		padding-top: 2em;
-	}}
-	h2 {{
-		color: #261192;
-		font-size: xx-large;
-		padding-bottom: 10px;
-	}}
-	#nm-footer-copy {{
-		color: #000000;
-		padding: 2em 0;
-	}}
-	#nm-menu-item {{
-		text-decoration: none;
-		font-size: xx-large;
-		text-transform: capitalize;
-	}}
+            {self.defaultstyle}
+            {self.navbar}
+            {self.extra_css}
+            {self.footer_nm}
         """
 
 class Page:
@@ -76,16 +104,22 @@ class Page:
         links_html = " | ".join(
             f'<a href="{href}">{text}</a>' for text, href in self.links
         )
-        return f"""<!DOCTYPE html>
-		<html lang="en">
-			<head>
+        
+        self.head_html = f"""
+            <head>
 				<meta charset="UTF-8">
-				<title>{str('neon monkey'.title()) +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
+				<title>{title +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
 				<link rel="icon" href="assets/icons/favicon.ico">
 				<style>
 					{self.style.render()}
 				</style>
 			</head>
+        """
+        
+        return f"""<!DOCTYPE html>
+            <html lang="en">
+			{self.head_html}
+            
 			<body>
 				<div id="nm-navbar">
 					<img src="assets/neonmonkey-logo.PNG" id="nm-logo-img" alt="LOGO-NM">
