@@ -39,7 +39,9 @@ class Style:
 	#navbar-menu-nm {{
 		display: flex;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: space-between;
+		width: 50%;
+		list-style: none;
 	}}
         {self.extra_css}
 	#nm-footer {{
