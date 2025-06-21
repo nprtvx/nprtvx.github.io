@@ -25,25 +25,25 @@ class Style:
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
-		box-shadow: 0px 0px 100px 0px #29EABC inset;
+		background-color: #abcdef;
 	}}
 	#nm-logo-img {{
-		width: 92px;
-		height: 48px;
-		border-radius: 12px;
+		width: 100px;
+		height: 100px;
+		border-radius: 0.8rem;
 	}}
 	h1 {{
 		color: #261192;
-		font-size: 2em;
+		font-size: xxx-large;
 	}}
         {self.extra_css}
 	#nm-footer {{
-		background-color: #66baab;
+		background-color: #abcdef;
 		padding-top: 2em;
 	}}
 	h2 {{
 		color: #261192;
-		font-size: 2.6rem;
+		font-size: xx-large;
 		padding-bottom: 10px;
 	}}
 	#nm-footer-copy {{
@@ -69,14 +69,15 @@ class Page:
 			<head>
 				<meta charset="UTF-8">
 				<title>{str('neon monkey'.title()) +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
+				<link rel="icon" href="assets/icons/favicon.ico">
 				<style>
 					{self.style.render()}
 				</style>
 			</head>
 			<body>
 				<div id="nm-navbar">
-					<img src="assets/landing-poster.jpg" id="nm-logo-img" alt="LOGO-NM">
-					<h1>neon monkey</h1>
+					<img src="assets/landing-logo.PNG" id="nm-logo-img" alt="LOGO-NM">
+					<h1>{str('neon monkey'.upper())}</h1>
 					<ul>
 						<li><a href="/about/">about</a></li>
 						<li><a href="/contact/">contact</a></li>
@@ -85,7 +86,7 @@ class Page:
 				</div>
 				{self.body}
 				<div id='nm-footer'>
-					<h2>{str('neon monkey'.title())}</h2>
+					<h2>{str('neon monkey'.upper())}</h2>
 					<div id='nm-footer-copy'>&copy 2025 {str('neon monkey'.upper())}</div>
 				</div>
 			</body>
