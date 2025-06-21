@@ -2,7 +2,7 @@ from src.BaseClassesForNM import Style, Page
 
 # css styles
 css = """
-   div {
+   #popeye-nahnothing {
       display: flex;
       font-size: 48px;
       display: flex;
@@ -20,9 +20,9 @@ style = Style(extra_css=css)
 
 # body for popeye page
 body = """
-   <div>
-      nah! nothing here
-   </div>
+	<div id='popeye-nahnothing'>
+		nah! nothing here
+	</div>
 """
 # create page for popeye
 page = Page(

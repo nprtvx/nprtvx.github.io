@@ -29,21 +29,20 @@ class Page:
             f'<a href="{href}">{text}</a>' for text, href in self.links
         )
         return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{str('neon monkey'.title()) +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
-  <style>
-  {self.style.render()}
-  </style>
-</head>
-<body>
-  <h1>{self.title if self.title != "Home" else str('neon monkey'.title())}</h1>
-  {self.body}
-  <div>{links_html}</div>
-</body>
-</html>
-"""
+		<html lang="en">
+			<head>
+				<meta charset="UTF-8">
+				<title>{str('neon monkey'.title()) +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
+				<style>
+					{self.style.render()}
+				</style>
+			</head>
+			<body>
+				<h1>{self.title if self.title != "Home" else str('neon monkey'.title())}</h1>
+				{self.body}
+			</body>
+		</html>
+	"""
 
     def write(self, directory="templates"):
         path = os.path.join(directory, self.filename)
