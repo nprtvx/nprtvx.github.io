@@ -1,6 +1,6 @@
 from src.BaseClassesForNM import Page, Style
 
-css = f"""
+css = """
 	h1 {
 		font-size: 8em;
 		padding: 26px;
