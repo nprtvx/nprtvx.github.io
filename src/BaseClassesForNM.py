@@ -19,17 +19,29 @@ class Style:
             font-family: Arial, sans-serif;
         }}
 	#nm-navbar {{
-		background-color: #66baab;
-		height: 8vmin;
 		position: sticky;
-		z-axis: 999;
+		top: 0;
+		padding: 8px 26px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		box-shadow: 0px 0px 100px 0px #29EABC inset;
+	}}
+	#nm-logo-img {{
+		width: 92px;
+		height: 48px;
+		border-radius: 12px;
+	}}
+	h1 {{
+		color: #261192;
+		font-size: 2em;
 	}}
         {self.extra_css}
 	#nm-footer {{
 		background-color: #66baab;
 		padding-top: 2em;
 	}}
-	#nm-footer h1 {{
+	h2 {{
 		color: #261192;
 		font-size: 2.6rem;
 		padding-bottom: 10px;
@@ -62,8 +74,14 @@ class Page:
 				</style>
 			</head>
 			<body>
-				<div id='nm-navbar'>
-					<img src='assets/landing-poster.jpg' id='nm-logo-img' alt={'logo nm'.upper()} >
+				<div id="nm-navbar">
+					<img src="assets/landing-poster.jpg" id="nm-logo-img" alt="LOGO-NM">
+					<h1>neon monkey</h1>
+					<ul>
+						<li><a href="/about/">about</a></li>
+						<li><a href="/contact/">contact</a></li>
+						<li><a href="/popeye/">popeye</a></li>
+					</ul>
 				</div>
 				{self.body}
 				<div id='nm-footer'>
