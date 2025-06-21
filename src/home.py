@@ -8,7 +8,7 @@ css = f"""
         height: 120px;
         margin: 26px;
         padding: 26px;
-        background: url("./landing-poster.jpg");
+        background: url("assets/landing-poster.jpg");
     }}
     #landing-poster-heading {{
         font-size: 48px;
