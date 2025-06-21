@@ -28,13 +28,18 @@ class Style:
 		background-color: #abcdef;
 	}}
 	#nm-logo-img {{
-		width: 100px;
-		height: 100px;
+		width: 50px;
+		height: 50px;
 		border-radius: 0.8rem;
 	}}
 	h1 {{
 		color: #261192;
 		font-size: xxx-large;
+	}}
+	#navbar-menu-nm {{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
 	}}
         {self.extra_css}
 	#nm-footer {{
@@ -49,6 +54,11 @@ class Style:
 	#nm-footer-copy {{
 		color: #000000;
 		padding: 2em 0;
+	}}
+	#nm-menu-item {{
+		text-decoration: none;
+		font-size: xx-large;
+		text-transform: capitalize;
 	}}
         """
 
@@ -76,12 +86,12 @@ class Page:
 			</head>
 			<body>
 				<div id="nm-navbar">
-					<img src="assets/landing-logo.PNG" id="nm-logo-img" alt="LOGO-NM">
+					<img src="assets/neonmonkey-logo.PNG" id="nm-logo-img" alt="LOGO-NM">
 					<h1>{str('neon monkey'.upper())}</h1>
-					<ul>
-						<li><a href="/about/">about</a></li>
-						<li><a href="/contact/">contact</a></li>
-						<li><a href="/popeye/">popeye</a></li>
+					<ul id="navbar-menu-nm">
+						<li><a href="/about/" id="nm-menu-item">about</a></li>
+						<li><a href="/contact/" id="nm-menu-item">contact</a></li>
+						<li><a href="/404/" id="nm-menu-item">404</a></li>
 					</ul>
 				</div>
 				{self.body}
