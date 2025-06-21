@@ -4,6 +4,7 @@ from src.home import page as home
 from src.about import page as about
 from src.contact import page as contact
 from src.popeye import page as popeye
+from src.a404 import page as a404
 
 TEMPLATES_DIR = 'templates'
 ASSETS_DIR = 'assets'
@@ -34,7 +35,7 @@ def copy_assets():
     print(f"Copied {ASSETS_DIR} to {dst_assets}")
 
 if __name__ == "__main__":
-    pages = [home, about, contact, popeye]
+    pages = [home, about, contact, popeye, a404]
     for page in pages:
         page.write()
     copy_templates()
