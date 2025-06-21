@@ -1,6 +1,8 @@
 import os
 import shutil
-from src.write_pages import home_page, about_page, contact_page
+from src.home import page as home
+from src.about import page as about
+from src.contact import page as contact
 from src.popeye import page as popeye
 
 TEMPLATES_DIR = 'templates'
@@ -32,7 +34,7 @@ def copy_assets():
     print(f"Copied {ASSETS_DIR} to {dst_assets}")
 
 if __name__ == "__main__":
-    pages = [home_page, about_page, contact_page, popeye]
+    pages = [home, about, contact, popeye]
     for page in pages:
         page.write()
     copy_templates()
