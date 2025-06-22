@@ -1,5 +1,7 @@
 import os
 import shutil
+from PIL import Image
+
 from src.home import page as home
 from src.about import page as about
 from src.contact import page as contact
@@ -9,6 +11,7 @@ from src.a404 import page as a404
 TEMPLATES_DIR = 'templates'
 ASSETS_DIR = 'assets'
 OUTPUT_DIR = 'static'
+LOGO = Image.open('assets/logo.png')
 
 def ensure_dir(path):
     if not os.path.exists(path):
@@ -37,6 +40,8 @@ def copy_assets():
 if __name__ == "__main__":
     pages = [home, about, contact, popeye, a404]
     for page in pages:
+	if not page.logo:
+		page.logo = LOGO
         page.write()
     copy_templates()
     copy_assets()

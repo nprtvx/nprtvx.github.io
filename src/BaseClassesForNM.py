@@ -93,8 +93,9 @@ class Style:
         """
 
 class Page:
-    def __init__(self, title, body, links=None, style=None, filename="page.html"):
+    def __init__(self, title, logo, body, links=None, style=None, filename="page.html"):
         self.title = title
+	self.logo = logo
         self.body = body
         self.links = links or []
         self.style = style or Style()
@@ -124,6 +125,9 @@ class Page:
 			<body>
 				<div id="nm-navbar">
 					<img src="assets/logo.png" id="nm-logo-img" alt="LOGO-NM">
+					<div id="nm-logo-img">
+						{self.logo.show()}
+					</div>
 					<ul id="navbar-menu-nm">
 						<li><a href="/about/" id="nm-menu-item">about</a></li>
 						<li><a href="/contact/" id="nm-menu-item">contact</a></li>
