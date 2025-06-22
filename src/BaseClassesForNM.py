@@ -101,6 +101,7 @@ class Page:
         self.filename = filename
 
     def render(self):
+	title = str('neon monkey'.title()
         links_html = " | ".join(
             f'<a href="{href}">{text}</a>' for text, href in self.links
         )
