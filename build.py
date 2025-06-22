@@ -1,6 +1,5 @@
 import os
 import shutil
-from PIL import Image
 
 from src.home import page as home
 from src.about import page as about
@@ -11,7 +10,7 @@ from src.a404 import page as a404
 TEMPLATES_DIR = 'templates'
 ASSETS_DIR = 'assets'
 OUTPUT_DIR = 'static'
-LOGO = Image.open('assets/logo.png')
+LOGO = 'assets/logo.png'
 
 def ensure_dir(path):
     if not os.path.exists(path):

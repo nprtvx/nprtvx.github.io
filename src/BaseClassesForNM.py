@@ -108,14 +108,14 @@ class Page:
         )
 
         self.head_html = f"""
-            <head>
-				<meta charset="UTF-8">
-				<title>{title +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
-				<link rel="icon" href="assets/icons/favicon.ico">
-				<style>
-					{self.style.render()}
-				</style>
-			</head>
+		<head>
+			<meta charset="UTF-8">
+			<title>{title +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
+			<link rel="icon" href="assets/icons/favicon.ico">
+			<style>
+				{self.style.render()}
+			</style>
+		</head>
         """
 
         return f"""<!DOCTYPE html>
@@ -124,10 +124,8 @@ class Page:
 
 			<body>
 				<div id="nm-navbar">
-					<img src="assets/logo.png" id="nm-logo-img" alt="LOGO-NM">
-					<div id="nm-logo-img">
-						{self.logo}
-					</div>
+					<img src={self.logo} id="nm-logo-img" alt="LOGO-NM">
+
 					<ul id="navbar-menu-nm">
 						<li><a href="/about/" id="nm-menu-item">about</a></li>
 						<li><a href="/contact/" id="nm-menu-item">contact</a></li>
