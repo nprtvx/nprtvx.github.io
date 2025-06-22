@@ -47,17 +47,24 @@
             #navbar-menu-nm {
         		display: flex;
         		align-items: center;
-        		justify-content: space-evenly;
-        		width: 50%;
+        		justify-content: space-between;
+        		width: 40%;
         		list-style: none;
         	}
 
             
-            #nm-menu-item {
+		#nm-menu-item {
         		text-decoration: none;
-        		font-size: xx-large;
+        		font-size: x-large;
         		text-transform: capitalize;
+			letter-spacing: 2px;
+			color: #29eaea87;
         	}
+		#nm-menu-item:hover {
+			border: 1em #29eaea87;
+			padding: 8px;
+			border-radius: 2em;
+		}
         
         
         
@@ -87,7 +94,9 @@
 
             
 		#nm-footer {
-			padding: 2em;
+			padding: 26px;
+			font-size: x-large;
+			letter-spacing: 2px;
 		}
         
         
@@ -97,7 +106,7 @@
 
 			<body>
 				<div id="nm-navbar">
-					<img src=../assets/logo.png id="nm-logo-img" alt="LOGO-NM">
+					<a href="/"><img src=../assets/logo.png id="nm-logo-img" alt="LOGO-NM"></a>
 
 					<ul id="navbar-menu-nm">
 						<li><a href="/about/" id="nm-menu-item">about</a></li>
