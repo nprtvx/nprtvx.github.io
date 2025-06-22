@@ -1,7 +1,7 @@
 import os
 
 class Style:
-    def __init__(self, body_bg="#000000", text_color="#abcdef", extra_css=""):
+    def __init__(self, body_bg="#001126", text_color="#abcdef", extra_css=""):
         self.body_bg = body_bg
         self.text_color = text_color
         self.extra_css = extra_css
