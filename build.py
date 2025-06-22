@@ -36,7 +36,7 @@ if __name__ == "__main__":
     pages = [home, about, contact, popeye, a404]
     """loop over each page and write them"""
     for page in pages:
-        """page logo defaults to None. Change path argument to update/replace
+        """page logo defaults to None. Change path argument to update/replace"""
         if not page.logo:
             page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
         page.write()
