@@ -1,26 +1,44 @@
 from src.BaseClassesForNM import Page, Style
 
 css = f"""
-    h1 {{
-        text-transform: uppercase;
-    }}
-    .landing-poster {{
-        height: 120px;
-        margin: 26px;
-        padding: 26px;
-        background: url("assets/landing-poster.jpg");
-    }}
-    #landing-poster-heading {{
-        font-size: 48px;
-        color: #261192;
-    }}
+	.landing-poster {{
+	        margin: 2em;
+        	padding: 2em 0;
+		border-radius: 2em;
+	        box-shadow: 0 0 1em #29eeaea;
+	}}
+
+	#landing-poster-heading {{
+		font-size: xxx-large;
+		color: #3692;
+		text-shadow: 0 0 8px #abcdef;
+		letter-spacing: 18px;
+		padding: 0 2em;
+		text-align: center;
+	}}
+
+	.card-div {{
+		background-color: #29eaea;
+		padding: 1em 8em;
+	}}
 """
 style = Style(extra_css=css)
 
+landing_poster = f"""
+	<div class="landing-poster">
+	        <h1 id="landing-poster-heading">welcome to neon monkey</h1>
+	</div>
+"""
+
+after_landing_poster = f"""
+	<div id="after-landing-poster">
+		<div class="card-div"></div>
+	</div>
+"""
+
 body = f"""
-    <section class="landing-poster">
-        <h1 id="landing-poster-heading">welcome to neon monkey</h1>
-    </section>
+	{landing_poster}
+	{after_landing_poster}
 """
 
 page = Page(
