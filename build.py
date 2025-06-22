@@ -40,8 +40,8 @@ def copy_assets():
 if __name__ == "__main__":
     pages = [home, about, contact, popeye, a404]
     for page in pages:
-	if not page.logo:
-		page.logo = LOGO
+        if not page.logo:
+            page.logo = LOGO
         page.write()
     copy_templates()
     copy_assets()
