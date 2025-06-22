@@ -46,7 +46,7 @@ class Style:
             #navbar-menu-nm {{
         		display: flex;
         		align-items: center;
-        		justify-content: space-between;
+        		justify-content: space-evenly;
         		width: 50%;
         		list-style: none;
         	}}
@@ -62,6 +62,7 @@ class Style:
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
+		box-shadow = 0 0 8em 0 #261192 inset;
             }}
 
             {self.logo_img}
@@ -123,7 +124,6 @@ class Page:
 			<body>
 				<div id="nm-navbar">
 					<img src="assets/logo.png" id="nm-logo-img" alt="LOGO-NM">
-					<h1>{str('neon monkey'.upper())}</h1>
 					<ul id="navbar-menu-nm">
 						<li><a href="/about/" id="nm-menu-item">about</a></li>
 						<li><a href="/contact/" id="nm-menu-item">contact</a></li>
