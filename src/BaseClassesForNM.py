@@ -13,19 +13,19 @@ class Style:
                 padding: 0;
                 box-sizing: border-box;
             }}
-            
+
             body {{
                 background-color: {self.body_bg};
                 color: {self.text_color};
                 font-family: Arial, sans-serif;
             }}
-            
+
             h1 {{
         		color: #261192;
         		font-size: xxx-large;
         	}}
         """
-        
+
         self.logo_img = f"""
             #nm-logo-img {{
                 width: 100px;
@@ -33,7 +33,7 @@ class Style:
                 border-radius: 0.8rem;
             }}
         """
-        
+
         self.nm_menu_item = f"""
             #nm-menu-item {{
         		text-decoration: none;
@@ -41,7 +41,7 @@ class Style:
         		text-transform: capitalize;
         	}}
         """
-        
+
         self.navbar_menu_nm = f"""
             #navbar-menu-nm {{
         		display: flex;
@@ -50,10 +50,10 @@ class Style:
         		width: 50%;
         		list-style: none;
         	}}
-            
+
             {self.nm_menu_item}
         """
-        
+
         self.navbar = f"""
             #nm-navbar {{
                 position: sticky;
@@ -64,11 +64,11 @@ class Style:
                 justify-content: space-evenly;
                 background-color: #abcdef;
             }}
-            
+
             {self.logo_img}
             {self.navbar_menu_nm}
         """
-        
+
         self.footer_nm = f"""
             #nm-footer {{
         		background-color: #abcdef;
@@ -84,7 +84,7 @@ class Style:
         		padding: 2em 0;
         	}}
         """
-        
+
         return f"""
             {self.defaultstyle}
             {self.navbar}
@@ -101,11 +101,11 @@ class Page:
         self.filename = filename
 
     def render(self):
-	title = str('neon monkey'.title()
+	title = str('neon monkey'.title())
         links_html = " | ".join(
             f'<a href="{href}">{text}</a>' for text, href in self.links
         )
-        
+
         self.head_html = f"""
             <head>
 				<meta charset="UTF-8">
@@ -116,11 +116,11 @@ class Page:
 				</style>
 			</head>
         """
-        
+
         return f"""<!DOCTYPE html>
-            <html lang="en">
+		<html lang="en">
 			{self.head_html}
-            
+
 			<body>
 				<div id="nm-navbar">
 					<img src="assets/neonmonkey-logo.PNG" id="nm-logo-img" alt="LOGO-NM">
