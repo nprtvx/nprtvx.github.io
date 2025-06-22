@@ -1,4 +1,5 @@
-import os
+#! bin/python
+from pathlib import Path
 import shutil
 
 from src.home import page as home
@@ -7,44 +8,38 @@ from src.contact import page as contact
 from src.popeye import page as popeye
 from src.a404 import page as a404
 
-TEMPLATES_DIR = 'templates'
-ASSETS_DIR = 'assets'
-OUTPUT_DIR = 'static'
-LOGO = 'assets/logo.png'
+TEMPLATES_DIR = Path('templates')
+ASSETS_DIR = Path('assets')
+OUTPUT_DIR = Path('static')
 
-def ensure_dir(path):
-    if not os.path.exists(path):
-        os.makedirs(path)
+def ensure_dir(path: Path):
+    path.mkdir(parents=True, exist_ok=True)
 
 def copy_templates():
     ensure_dir(OUTPUT_DIR)
-    for root, dirs, files in os.walk(TEMPLATES_DIR):
-        for filename in files:
-            if filename.endswith('.html'):
-                rel_dir = os.path.relpath(root, TEMPLATES_DIR)
-                dest_dir = os.path.join(OUTPUT_DIR, rel_dir)
-                ensure_dir(dest_dir)
-                src = os.path.join(root, filename)
-                dst = os.path.join(dest_dir, filename)
-                shutil.copyfile(src, dst)
-                print(f"Copied {src} to {dst}")
+    for template_path in TEMPLATES_DIR.rglob('*.html'):
+        rel_path = template_path.relative_to(TEMPLATES_DIR)
+        dest_path = OUTPUT_DIR / rel_path.parent
+        ensure_dir(dest_path)
+        shutil.copyfile(template_path, dest_path / template_path.name)
+        print(f"Copied {template_path} to {dest_path / template_path.name}")
 
 def copy_assets():
-    if not os.path.exists(ASSETS_DIR):
+    if not ASSETS_DIR.exists():
         return
-    dst_assets = os.path.join(OUTPUT_DIR, 'assets')
+    dst_assets = OUTPUT_DIR / 'assets'
     shutil.copytree(ASSETS_DIR, dst_assets, dirs_exist_ok=True)
     print(f"Copied {ASSETS_DIR} to {dst_assets}")
 
 if __name__ == "__main__":
+    """create a list of pages"""
     pages = [home, about, contact, popeye, a404]
+    """loop over each page and write them"""
     for page in pages:
+        """page logo defaults to None. Change path argument to update/replace
         if not page.logo:
-            if page.title == "Home":
-                page.logo = LOGO
-            else:
-                page.logo = os.path.join("..",LOGO)
+            page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
         page.write()
     copy_templates()
-    copy_assets()
-    print("Static site generated in", OUTPUT_DIR)
+    #copy_assets()
+    print(f"Static site generated in {OUTPUT_DIR}")
