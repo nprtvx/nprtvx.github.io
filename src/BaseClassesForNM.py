@@ -62,7 +62,6 @@ class Style:
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
-                background-color: #abcdef;
             }}
 
             {self.logo_img}
