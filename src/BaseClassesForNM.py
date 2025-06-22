@@ -123,7 +123,7 @@ class Page:
 
 			<body>
 				<div id="nm-navbar">
-					<img src="assets/neonmonkey-logo.PNG" id="nm-logo-img" alt="LOGO-NM">
+					<img src="assets/logo.png" id="nm-logo-img" alt="LOGO-NM">
 					<h1>{str('neon monkey'.upper())}</h1>
 					<ul id="navbar-menu-nm">
 						<li><a href="/about/" id="nm-menu-item">about</a></li>
