@@ -70,19 +70,9 @@ class Style:
         """
 
         self.footer_nm = f"""
-            #nm-footer {{
-        		background-color: #abcdef;
-        		padding-top: 2em;
-        	}}
-        	h2 {{
-        		color: #261192;
-        		font-size: xx-large;
-        		padding-bottom: 10px;
-        	}}
-        	#nm-footer-copy {{
-        		color: #000000;
-        		padding: 2em 0;
-        	}}
+		#nm-footer {{
+			padding: 2em;
+		}}
         """
 
         return f"""
@@ -132,11 +122,10 @@ class Page:
 						<li><a href="/404/" id="nm-menu-item">404</a></li>
 					</ul>
 				</div>
+
 				{self.body}
-				<div id='nm-footer'>
-					<h2>{str('neon monkey'.upper())}</h2>
-					<div id='nm-footer-copy'>&copy 2025 {str('neon monkey'.upper())}</div>
-				</div>
+
+				<div id='nm-footer'>&copy 2025 {str('neon monkey'.upper())}</div>
 			</body>
 		</html>
 	"""
