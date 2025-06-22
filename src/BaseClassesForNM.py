@@ -126,7 +126,7 @@ class Page:
 				<div id="nm-navbar">
 					<img src="assets/logo.png" id="nm-logo-img" alt="LOGO-NM">
 					<div id="nm-logo-img">
-						{self.logo.show()}
+						{self.logo}
 					</div>
 					<ul id="navbar-menu-nm">
 						<li><a href="/about/" id="nm-menu-item">about</a></li>
