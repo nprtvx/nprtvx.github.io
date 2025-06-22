@@ -61,7 +61,7 @@ class Style:
                 padding: 8px 26px;
                 display: flex;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: space-between;
 		box-shadow = 0 0 8em 0 #261192 inset;
             }}
 
