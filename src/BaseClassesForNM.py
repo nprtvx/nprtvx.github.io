@@ -93,7 +93,7 @@ class Style:
         """
 
 class Page:
-    def __init__(self, title, logo, body, links=None, style=None, filename="page.html"):
+    def __init__(self, title, logo=None, body, links=None, style=None, filename="page.html"):
         self.title = title
         self.logo = logo
         self.body = body
