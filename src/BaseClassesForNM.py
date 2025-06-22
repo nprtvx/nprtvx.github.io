@@ -1,7 +1,7 @@
 import os
 
 class Style:
-    def __init__(self, body_bg="#001126", text_color="#abcdef", extra_css=""):
+    def __init__(self, body_bg="#001126", text_color="#abcdef87", extra_css=""):
         self.body_bg = body_bg
         self.text_color = text_color
         self.extra_css = extra_css
@@ -41,10 +41,12 @@ class Style:
         		text-transform: capitalize;
 			letter-spacing: 2px;
 			color: #29eaea87;
-        	}}
-		#nm-menu-item:hover {{
-			border: 1em #29eaea87;
 			padding: 8px;
+        	}}
+
+		#nm-menu-item:hover {{
+			padding: 8px;
+			border: 1em #29eaea87;
 			border-radius: 2em;
 		}}
         """

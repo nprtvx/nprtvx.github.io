@@ -18,8 +18,9 @@ css = f"""
 	}}
 
 	.card-div {{
-		background-color: #29eaea;
-		padding: 1em 8em;
+		background-color: #29eaea87;
+		padding: 1px 0;
+		margin: 0 8em;
 	}}
 """
 style = Style(extra_css=css)
