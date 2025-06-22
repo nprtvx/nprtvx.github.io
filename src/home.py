@@ -5,7 +5,7 @@ css = f"""
 	        margin: 2em;
         	padding: 2em 0;
 		border-radius: 2em;
-	        box-shadow: 0 0 1em #29eeaea;
+	        box-shadow: 0 0 1em #29eaea inset;
 	}}
 
 	#landing-poster-heading {{
