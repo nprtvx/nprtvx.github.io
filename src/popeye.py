@@ -41,6 +41,8 @@ CSS_STYLES = """
         60% {
             transform: translateY(-15px);
         }
+	90% {
+            transform: translateY(-20px);
     }
 """
 
