@@ -73,6 +73,9 @@ page.body = page.body + """
 """
 page.style.extra_css = page.style.extra_css + """
 	#animated-bouncing-ball {
+		width: 25px;
+		height: 25px;
+		background-color: #26119287;
 		animation: bounce 8s infinite;
 	}
 """
