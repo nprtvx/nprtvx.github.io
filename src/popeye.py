@@ -65,3 +65,14 @@ page = Page(
     style=style,
     filename="popeye/index.html"
 )
+
+page.body = page.body + """
+	<div id="animated-bouncing-ball">
+		animated bouncing ball
+	</div>
+"""
+page.style.extra_css = page.style.extra_css + """
+	#animated-bouncing-ball {
+		animation: bounce 8s infinite;
+	}
+"""
