@@ -41,5 +41,5 @@ if __name__ == "__main__":
             page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
         page.write()
     copy_templates()
-    #copy_assets()
+    copy_assets()
     print(f"Static site generated in {OUTPUT_DIR}")
