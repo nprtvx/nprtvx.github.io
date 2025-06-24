@@ -4,7 +4,7 @@ body = """
 	<div id="animated-bouncing-ball">
 		animated bouncing ball
 	</div>
-	<div id="cards-for-quotes>
+	<div id="cards-for-quotes">
 		<div id="card-for-quote"></div>
 	</div>
 <div id="cards-for-quotes">
