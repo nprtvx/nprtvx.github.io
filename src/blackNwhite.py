@@ -5,7 +5,7 @@ page = Page( title="Black & White", body='', links=None, style=style,
     filename="blackNwhite/index.html"
 )
 
-page.body = page.body + ''.join(page.body, "<div id='animated-bouncing-ball'>animated bouncing ball</div> ")
+page.body = ''.join("<div id='animated-bouncing-ball'>animated bouncing ball</div> ")
 page.style.extra_css = page.style.extra_css + """
 	#animated-bouncing-ball {
 		width: 25px; height: 25px; background-color: #26119287; 
