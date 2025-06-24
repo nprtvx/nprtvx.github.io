@@ -1,7 +1,7 @@
 from src.BaseClassesForNM import Style, Page
-
+style = Style()
 # Page object for the Popeye page
-page = Page( title="Popeye", body=HTML_BODY, links=None, style=style, 
+page = Page( title="Popeye", links=None, style=style, 
     filename="popeye/index.html"
 )
 
