@@ -1,8 +1,8 @@
 from src.BaseClassesForNM import Style, Page
 style = Style()
 # Page object for the Popeye page
-page = Page( title="Popeye", links=None, style=style, 
-    filename="popeye/index.html"
+page = Page( title="Black & White", body='', links=None, style=style, 
+    filename="blackNwhite/index.html"
 )
 
 page.body = page.body + ''.join(page.body, "<div id='animated-bouncing-ball'>animated bouncing ball</div> ")
