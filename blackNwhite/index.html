@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+		<html lang="en">
+			
+		<head>
+			<meta charset="UTF-8">
+			<title>Neon Monkey | Black & White</title>
+			<link rel="icon" href="assets/icons/favicon.ico">
+			<style>
+				
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #001126;
+                color: #abcdef87;
+                font-family: Arial, sans-serif;
+            }
+
+            h1 {
+        		color: #261192;
+        		font-size: xxx-large;
+        	}
+        
+            
+            #nm-navbar {
+                position: sticky;
+                top: 0;
+                padding: 8px 26px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+		box-shadow = 0 0 8em 0 #261192 inset;
+            }
+
+            
+            #nm-logo-img {
+                width: 100px;
+                height: 100px;
+                border-radius: 0.8rem;
+            }
+        
+            
+            #navbar-menu-nm {
+        		display: flex;
+        		align-items: center;
+        		justify-content: space-between;
+        		width: 40%;
+        		list-style: none;
+        	}
+
+            
+		#nm-menu-item {
+        		text-decoration: none;
+        		font-size: x-large;
+        		text-transform: capitalize;
+			letter-spacing: 2px;
+			color: #29eaea87;
+			padding: 8px;
+        	}
+
+		#nm-menu-item:hover {
+			padding: 8px;
+			border: 1em #29eaea87;
+			border-radius: 2em;
+		}
+        
+        
+        
+            
+	#animated-bouncing-ball {
+		width: 25px; height: 25px; background-color: #26119287; 
+		animation: bounce 8s infinite;
+	}
+	@keyframes bounce {
+		0% {
+			background-color: #000000a8;
+			width: 26px;
+			height: 26px;
+			border-radius: 26px 99px 36px 56px;
+			box-shadow: 0 0 8px #a2a2a2a2 inset;
+		}
+		25% {
+			background-color: #ff0000a8;
+			width: 48px;
+			height: 48px;
+			border-radius: 26px 99px 36px 56px;
+			box-shadow: 0 0 8px #a2a2a2a2 inset;
+		}
+		50% {
+			background-color: #00ff00a8;
+			width: 69px;
+			height: 69px;
+			border-radius: 26px 99px 36px 56px;
+			box-shadow: 0 0 8px #a2a2a2a2 inset;
+		}
+		100% {
+			background-color: #0000ffa8;
+			width: 87px;
+			height: 87px;
+			border-radius: 26px 99px 36px 56px;
+			box-shadow: 0 0 8px #a2a2a2a2 inset;
+		}
+	}
+
+            
+		#nm-footer {
+			padding: 26px;
+			font-size: x-large;
+			letter-spacing: 2px;
+		}
+        
+        
+			</style>
+		</head>
+        
+
+			<body>
+				<div id="nm-navbar">
+					<a href="/"><img src=../assets/logo.png id="nm-logo-img" alt="LOGO-NM"></a>
+
+					<ul id="navbar-menu-nm">
+						<li><a href="/about/" id="nm-menu-item">about</a></li>
+						<li><a href="/contact/" id="nm-menu-item">contact</a></li>
+						<li><a href="/404/" id="nm-menu-item">404</a></li>
+					</ul>
+				</div>
+
+				<div id='animated-bouncing-ball'>animated bouncing ball</div> 
+
+				<div id='nm-footer'>&copy 2025 NEON MONKEY</div>
+			</body>
+		</html>
+	
