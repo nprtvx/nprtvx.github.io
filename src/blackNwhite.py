@@ -1,16 +1,47 @@
 from src.BaseClassesForNM import Style, Page
+
+body = """
+	<div id="animated-bouncing-ball">
+		animated bouncing ball
+	</div>
+	<div id="cards-for-quotes>
+		<div id="card-for-quote"></div>
+	</div>
+"""
+
 style = Style()
+
 # Page object for the Popeye page
-page = Page( title="Black & White", body='', links=None, style=style, 
+page = Page( title="Black & White", body=body, links=None, style=style, 
     filename="blackNwhite/index.html"
 )
 
-page.body = ''.join("<div id='animated-bouncing-ball'>animated bouncing ball</div> ")
 page.style.extra_css = page.style.extra_css + """
+	body {
+		background-color: #000000a8;
+		color: a2a2a2a2;
+	}
+
+	#cards-for-quotes {
+		display: flex;
+		align-items: space-evenly;
+		justify-content: space-evenly;
+		height: 100vmin;
+		background-color: #000000a4;
+	}
+
+	#card-for-quote {
+		width: 250px;
+		height: 250px;
+		border-radius: 26px;
+		box-shadow: 0 0 8px #a2a2a2a2;
+	}
+
 	#animated-bouncing-ball {
 		width: 25px; height: 25px; background-color: #26119287; 
 		animation: bounce 8s infinite;
 	}
+
 	@keyframes bounce {
 		0% {
 			background-color: #000000a8;
