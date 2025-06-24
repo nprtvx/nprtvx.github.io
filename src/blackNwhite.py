@@ -7,6 +7,33 @@ body = """
 	<div id="cards-for-quotes>
 		<div id="card-for-quote"></div>
 	</div>
+<div id="cards-for-quotes">
+		<div id=" card-for-quote" =""="" style="
+    background-color: snow;
+    width: 350px;
+    height: 600px;
+    border-radius: 26px;
+    opacity: 0.5;
+    box-shadow: 0 0 87px red inset;
+    color: #ff0000a8;
+"></div>
+<div id=" card-for-quote" =""="" style="
+    background-color: snow;
+    width: 350px;
+    height: 600px;
+    border-radius: 26px;
+    opacity: 0.5;
+    box-shadow: 0 0 87px red inset;
+    color: #ff0000a8;
+"></div><div id=" card-for-quote" =""="" style="
+    background-color: snow;
+    width: 350px;
+    height: 600px;
+    border-radius: 26px;
+    opacity: 0.5;
+    box-shadow: 0 0 87px red inset;
+    color: #ff0000a8;
+"></div></div>
 """
 
 style = Style()
