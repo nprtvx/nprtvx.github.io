@@ -44,6 +44,9 @@ page = Page( title="Black & White", body=body, links=None, style=style,
 )
 
 page.style.extra_css = page.style.extra_css + """
+	footer, navbar {
+		display: none;
+	}
 	body {
 		background-color: #000000a8;
 		color: a2a2a2a2;
