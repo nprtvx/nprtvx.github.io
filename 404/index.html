@@ -15,8 +15,8 @@
             }
 
             body {
-                background-color: #001126;
-                color: #abcdef87;
+                background-color: #000000;
+                color: whitesmoke;
                 font-family: Arial, sans-serif;
 		height: 100vh;
 		width: 100vw;
@@ -24,44 +24,48 @@
         
             
             #nm-navbar {
-                position: absolute;
-                top: 0;
-                padding: 4%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-		box-shadow = 0 0 26% 0 #261192 inset;
+		box-shadow: 0 0 2em 0 #fff8 inset;
+                height: 10vh;
             }
 
             
             #nm-logo-img {
-                width: 8%;
-                height: 8%;
+                width: 100%;
+                height: 100%;
                 border-radius: 1em;
             }
+            #img-logo-link {
+		opacity: 0.8;
+		height: 8em;
+		width: 11em;
+            }
+
         
             
             #navbar-menu-nm {
         		display: flex;
         		align-items: center;
         		justify-content: space-between;
-        		width: 40%;
         		list-style: none;
-			padding: 4%;
         	}
 
             
 		#nm-menu-item {
         		text-decoration: none;
-        		font-size: x-large;
-        		text-transform: capitalize;
-			letter-spacing: 2%;
-			color: #29eaea87;
-			margin: 4%;
+        		font-size: 1.5em;
+        		text-transform: uppercase;
+			letter-spacing: 2em;
+			color: whitesmoke;
+			opacity: 0.5;
+			margin: 1em 0;
+
         	}
 
 		#nm-menu-item:hover {
-			margin: 4%;
+			margin: 1em;
 			border: 1em #29eaea87;
 			border-radius: 2em;
 		}
@@ -106,7 +110,7 @@
 
 			<body>
 				<div id="nm-navbar">
-					<a href="/"><img src=../assets/logo.png id="nm-logo-img" alt="LOGO-NM"></a>
+					<a href="/" id="img-link-logo"><img src=../assets/logo.png id="nm-logo-img" alt="LOGO-NM"></a>
 
 					<ul id="navbar-menu-nm">
 						<li><a href="/about/" id="nm-menu-item">about</a></li>
