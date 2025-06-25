@@ -1,9 +1,10 @@
 from src.BaseClassesForNM import Style, Page
 
 body = """
-	<div id="animated-bouncing-ball">
-		animated bouncing ball
-	</div>
+	<div id="animated-bouncing-ball" style="
+    position: absolute;
+    left: 50px;
+"></div>
 	<div id="cards-for-quotes">
 		<div id="card-for-quote"></div>
 	</div>
