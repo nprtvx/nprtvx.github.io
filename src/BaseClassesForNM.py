@@ -31,8 +31,8 @@ class Style:
             }}
             #img-link-logo {{
 		opacity: 0.8;
-		height: 8em;
-		width: 11em;
+		height: 150px;
+		width: 250px;
             }}
 
         """
