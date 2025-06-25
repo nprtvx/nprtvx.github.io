@@ -42,15 +42,14 @@ class Style:
         		text-decoration: none;
         		font-size: 1.5em;
         		text-transform: uppercase;
-			letter-spacing: 2em;
+			letter-spacing: 0.2em;
 			color: whitesmoke;
 			opacity: 0.5;
-			margin: 1em 0;
-
+			padding: 1em;
         	}}
 
 		#nm-menu-item:hover {{
-			margin: 1em;
+			padding: 1em;
 			border: 1em #29eaea87;
 			border-radius: 2em;
 		}}
@@ -74,6 +73,8 @@ class Style:
                 justify-content: space-between;
 		box-shadow: 0 0 2em 0 #fff8 inset;
                 height: 10vh;
+		position: sticky;
+		top: 0;
             }}
 
             {self.logo_img}
