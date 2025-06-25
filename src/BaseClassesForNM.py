@@ -1,7 +1,7 @@
 import os
 
 class Style:
-    def __init__(self, body_bg="#001126", text_color="#abcdef87", extra_css=""):
+    def __init__(self, body_bg="#000000", text_color="whitesmoke", extra_css=""):
         self.body_bg = body_bg
         self.text_color = text_color
         self.extra_css = extra_css
@@ -25,24 +25,32 @@ class Style:
 
         self.logo_img = f"""
             #nm-logo-img {{
-                width: 8%;
-                height: 8%;
+                width: 100%;
+                height: 100%;
                 border-radius: 1em;
             }}
+            #img-logo-link {{
+		opacity: 0.8;
+		height: 8em;
+		width: 11em;
+            }}
+
         """
 
         self.nm_menu_item = f"""
 		#nm-menu-item {{
         		text-decoration: none;
-        		font-size: x-large;
-        		text-transform: capitalize;
-			letter-spacing: 2%;
-			color: #29eaea87;
-			margin: 4%;
+        		font-size: 1.5em;
+        		text-transform: uppercase;
+			letter-spacing: 2em;
+			color: whitesmoke;
+			opacity: 0.5;
+			margin: 1em 0;
+
         	}}
 
 		#nm-menu-item:hover {{
-			margin: 4%;
+			margin: 1em;
 			border: 1em #29eaea87;
 			border-radius: 2em;
 		}}
@@ -53,9 +61,7 @@ class Style:
         		display: flex;
         		align-items: center;
         		justify-content: space-between;
-        		width: 40%;
         		list-style: none;
-			padding: 4%;
         	}}
 
             {self.nm_menu_item}
@@ -63,13 +69,11 @@ class Style:
 
         self.navbar = f"""
             #nm-navbar {{
-                position: absolute;
-                top: 0;
-                padding: 4%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-		box-shadow = 0 0 26% 0 #261192 inset;
+		box-shadow: 0 0 2em 0 #fff8 inset;
+                height: 10vh;
             }}
 
             {self.logo_img}
@@ -123,7 +127,7 @@ class Page:
 
 			<body>
 				<div id="nm-navbar">
-					<a href="/"><img src={self.logo} id="nm-logo-img" alt="LOGO-NM"></a>
+					<a href="/" id="img-link-logo"><img src={self.logo} id="nm-logo-img" alt="LOGO-NM"></a>
 
 					<ul id="navbar-menu-nm">
 						<li><a href="/about/" id="nm-menu-item">about</a></li>
