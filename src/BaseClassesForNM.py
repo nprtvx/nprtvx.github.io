@@ -18,19 +18,16 @@ class Style:
                 background-color: {self.body_bg};
                 color: {self.text_color};
                 font-family: Arial, sans-serif;
+		height: 100vh;
+		width: 100vw;
             }}
-
-            h1 {{
-        		color: #261192;
-        		font-size: xxx-large;
-        	}}
         """
 
         self.logo_img = f"""
             #nm-logo-img {{
-                width: 100px;
-                height: 100px;
-                border-radius: 0.8rem;
+                width: 8%;
+                height: 8%;
+                border-radius: 1em;
             }}
         """
 
@@ -39,13 +36,13 @@ class Style:
         		text-decoration: none;
         		font-size: x-large;
         		text-transform: capitalize;
-			letter-spacing: 2px;
+			letter-spacing: 2%;
 			color: #29eaea87;
-			padding: 8px;
+			margin: 4%;
         	}}
 
 		#nm-menu-item:hover {{
-			padding: 8px;
+			margin: 4%;
 			border: 1em #29eaea87;
 			border-radius: 2em;
 		}}
@@ -58,6 +55,7 @@ class Style:
         		justify-content: space-between;
         		width: 40%;
         		list-style: none;
+			padding: 4%;
         	}}
 
             {self.nm_menu_item}
@@ -65,13 +63,13 @@ class Style:
 
         self.navbar = f"""
             #nm-navbar {{
-                position: sticky;
+                position: absolute;
                 top: 0;
-                padding: 8px 26px;
+                padding: 4%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-		box-shadow = 0 0 8em 0 #261192 inset;
+		box-shadow = 0 0 26% 0 #261192 inset;
             }}
 
             {self.logo_img}
@@ -80,9 +78,9 @@ class Style:
 
         self.footer_nm = f"""
 		#nm-footer {{
-			padding: 26px;
+			padding: 4%;
 			font-size: x-large;
-			letter-spacing: 2px;
+			letter-spacing: 2%;
 		}}
         """
 
