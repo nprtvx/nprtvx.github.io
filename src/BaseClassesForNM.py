@@ -131,18 +131,22 @@ class Page:
 
 			<body>
 				<div id="nm-navbar">
-					<a href="/" id="img-link-logo"><img src={self.logo} id="nm-logo-img" alt="LOGO-NM"></a>
+					<a href="/" id="img-link-logo">
+						<img src={self.logo} id="nm-logo-img" alt="LOGO-NM">
+					</a>
 
 					<ul id="navbar-menu-nm">
-						<li><a href="/about/" id="nm-menu-item">about</a></li>
-						<li><a href="/contact/" id="nm-menu-item">contact</a></li>
-						<li><a href="/404/" id="nm-menu-item">404</a></li>
+						<li id='li-menu-item'><a href="/about/" id="nm-menu-item">about</a></li>
+						<li id='li-menu-item'><a href="/contact/" id="nm-menu-item">contact</a></li>
+						<li id='li-menu-item'><a href="/404/" id="nm-menu-item">404</a></li>
 					</ul>
 				</div>
 
 				{self.body}
 
-				<div id='nm-footer'>&copy 2025 {str('neon monkey'.upper())}</div>
+				<div id='nm-footer'>
+					<div id='footer-copy'>&copy 2025 {str('neon monkey'.upper())}</div>
+				</div>
 			</body>
 		</html>
 	"""
