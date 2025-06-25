@@ -29,7 +29,7 @@ class Style:
                 height: 100%;
                 border-radius: 1em;
             }}
-            #img-logo-link {{
+            #img-link-logo {{
 		opacity: 0.8;
 		height: 8em;
 		width: 11em;
