@@ -115,7 +115,7 @@ class Page:
 		<head>
 			<meta charset="UTF-8">
 			<title>{title +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
-			<link rel="icon" href="assets/icons/favicon.ico">
+			<link rel="icon" href="/assets/favicon.ico">
 			<style>
 				{self.style.render()}
 			</style>
