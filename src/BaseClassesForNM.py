@@ -64,7 +64,6 @@ class Style:
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-		box-shadow: 0 0 2em 0 #fff8 inset;
                 height: 10vh;
 		position: sticky;
 		top: 0;
