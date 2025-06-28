@@ -84,12 +84,14 @@ class Style:
         self.footer_nm = f"""
 		#nm-footer {{
 			box-shadow: 0 0 3em #fff8 inset;
-			padding: 0 1em;
+			padding: 0 1%;
 		}}
 		#footer-copy {{
 			text-shadow: 0 0 #0008;
 			color: transparent;
-			margin: 1em 0;
+			font-family: monospace;
+			font-weight: 600;
+			font-size: 1.5em;
 		}}
         """
 
@@ -134,9 +136,6 @@ class Page:
 				<div id="nm-navbar">
 					<a href="/" id="img-link-logo">
 						<img src={self.logo} id="nm-logo-img" alt="LOGO-NM">
-						<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="8vmin">
-							<polygon points="0,100 25,30 10,10 50,25 50,75 90,90 75,70 100,0" fill="#29ea"></polygon>
-						</svg>
 					</a>
 
 					<ul id="navbar-menu-nm">
