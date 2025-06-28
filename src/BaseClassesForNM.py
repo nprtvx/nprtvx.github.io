@@ -25,9 +25,8 @@ class Style:
 
         self.logo_img = f"""
             #nm-logo-img {{
-                width: 100%;
-                height: 100%;
-                border-radius: 1em;
+                box-radius: 0 0 0 0.2rem #29e inset;
+                border-radius: 0.5rem;
             }}
             #img-link-logo {{
 		opacity: 0.8;
@@ -134,9 +133,6 @@ class Page:
 				<div id="nm-navbar">
 					<a href="/" id="img-link-logo">
 						<img src={self.logo} id="nm-logo-img" alt="LOGO-NM">
-						<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="8vmin">
-							<polygon points="0,100 25,30 10,10 50,25 50,75 90,90 75,70 100,0" fill="#29ea"></polygon>
-						</svg>
 					</a>
 
 					<ul id="navbar-menu-nm">
