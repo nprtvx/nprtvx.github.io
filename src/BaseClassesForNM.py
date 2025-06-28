@@ -25,7 +25,7 @@ class Style:
 
         self.logo_img = f"""
             #nm-logo-img {{
-                width: 100%;
+                margin: 0 1rem;
                 box-shadow: 0 0 0 0.2rem #29e inset;
                 border-radius: 0.5rem;
             }}
