@@ -28,12 +28,6 @@ class Style:
                 box-radius: 0 0 0 0.2rem #29e inset;
                 border-radius: 0.5rem;
             }}
-            #img-link-logo {{
-		opacity: 0.8;
-		height: 150px;
-		width: 250px;
-            }}
-
         """
 
         self.nm_menu_item = f"""
