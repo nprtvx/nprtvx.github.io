@@ -19,7 +19,7 @@ class Style:
                 color: {self.text_color};
                 font-family: monospace;
             }}
-            body, .nm-navbar, .landing-poster {{
+            .nm-navbar, .landing-poster {{
 		display: flex;
             }}
         """
