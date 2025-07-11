@@ -1,7 +1,7 @@
 import os
 
 class Style:
-    def __init__(self, body_bg="#000000", text_color="whitesmoke", extra_css=""):
+    def __init__(self, body_bg="#000000", text_color="#29e", extra_css=""):
         self.body_bg = body_bg
         self.text_color = text_color
         self.extra_css = extra_css
@@ -17,9 +17,10 @@ class Style:
             body {{
                 background-color: {self.body_bg};
                 color: {self.text_color};
-                font-family: Arial, sans-serif;
-		height: 100vh;
-		width: 100vw;
+                font-family: monospace;
+            }}
+            body, .nm-navbar, .landing-poster {{
+		display: flex;
             }}
         """
 

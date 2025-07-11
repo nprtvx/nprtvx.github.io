@@ -1,19 +1,19 @@
 from src.BaseClassesForNM import Page, Style
 
 css = """
-	h1 {
-		font-size: 8em;
-		padding: 26px;
-	}
-	div {
+	div#page-404 {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		padding: 2.6em;
 		flex-direction: column;
 	}
-	p {
+	h1 {
 		font-size: 48px;
+		color: #fff8;
+	}
+	p {
+		font-size: 18px;
 	}
 	a {
 		text-decoration: none;
@@ -21,13 +21,12 @@ css = """
 	}
 	a:hover {
 		color: #261192;
-		background-color: #66baab;
 	}
 """
 style = Style(extra_css=css)
 
 body = f"""
-	<div>
+	<div id='page-404'>
 		<h1>404</h1>
 		<p>wanna go home? <a href="/">click here</a></p>
 	</div
