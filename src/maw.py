@@ -38,7 +38,7 @@ body = f"""
     <p>strong, independent dentist from india working in the usa as a full time lead co-ordinator at "soul dental" west</p>
     <ul id='profile'>
         <li id='fullname'>tejitha yenupuri</li>
-        <li id='fullname'>ytejita95@gmail.com</li>
+        <li id='email'>ytejita95@gmail.com</li>
     </ul>
 """
 
