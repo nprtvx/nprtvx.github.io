@@ -31,7 +31,6 @@ css = f"""
         font-size: 21px;
     }}
     #logo {{
-        height: 20vmin;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -40,6 +39,8 @@ css = f"""
         font-size: 8rem;
         background-color: #954;
         border-radius: 2rem;
+        width: content-width;
+        padding: 2rem;
     }}
 """
 style = Style(extra_css=css)
