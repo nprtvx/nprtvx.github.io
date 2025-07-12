@@ -5,21 +5,21 @@ css = f"""
         display: flex;
         aligin-items: center;
         justify-content: center;
-								flex-direction: column;
-								padding: 1rem 0;
+        flex-direction: column;
+        padding: 1rem 0;
     }}
-				#fullname {{
-				    color: #29e;
+    #fullname {{
+        color: #29e;
         background-color: #000d;
-        font-size: 8rem;
-								margin: 1rem 0;
-			 }}
-				#email {{
-				    color: #29e;
+        font-size: 26px;
+        margin: 1rem 0;
+    }}
+    #email {{
+        color: #29e;
         background-color: #000d;
-        font-size: 8rem;
-								margin: 1rem 0;
-			 }}
+        font-size: 26px;
+        margin: 1rem 0;
+    }}
 """
 style = Style(extra_css=css)
 
