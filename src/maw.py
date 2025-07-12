@@ -22,7 +22,7 @@ css = f"""
 		padding: 1px 0;
 		margin: 0 8em;
 	}}
-    #maw-div {
+    #maw-div {{
         color: #29e;
         background-color: #000d;
         font-size: 12rem;
@@ -30,7 +30,7 @@ css = f"""
         display: flex;
         aligin-items: center;
         justify-content: center;
-    }
+    }}
 """
 style = Style(extra_css=css)
 
