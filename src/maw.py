@@ -39,7 +39,7 @@ css = f"""
         font-size: 8rem;
         background-color: #954;
         border-radius: 2rem;
-        width: content-width;
+        width: fit-content;
         padding: 2rem;
     }}
 """
