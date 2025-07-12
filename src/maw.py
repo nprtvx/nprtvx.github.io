@@ -7,11 +7,13 @@ css = f"""
         justify-content: center;
         flex-direction: column;
         padding: 1rem 0;
+        list-style: none;
     }}
     #fullname {{
         color: #29e;
         font-size: 26px;
         margin: 1rem 0;
+        text-transform: capitalize;
     }}
     #email {{
         color: #29e;
@@ -22,11 +24,11 @@ css = f"""
         padding-left: 2rem;
         font-size: 26px;
         text-transform: uppercase;
-        color: #954
+        color: #954;
     }}
     p {{
         padding: 0 1rem;
-        font-size: 18px;
+        font-size: 21px;
     }}
 """
 style = Style(extra_css=css)
