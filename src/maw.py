@@ -55,5 +55,5 @@ page = Page(
     body=body,
     links=[],
     style=style,
-    filename="index.html"
+    filename="maw/index.html"
 )
