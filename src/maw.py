@@ -47,7 +47,7 @@ after_landing_poster = f"""
 """
 
 body = f"""
-    <div id='maw-div'>ello mawduuuu iduvu</div>
+    <div id='maw-div'>ello mawduuuu i❤️u</div>
 """
 
 page = Page(
