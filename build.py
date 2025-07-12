@@ -8,6 +8,7 @@ from src.contact import page as contact
 from src.popeye import page as popeye
 from src.a404 import page as a404
 from src.blackNwhite import  page as blackNwhite
+from stc.maw import page as maw
 
 TEMPLATES_DIR = Path('templates')
 ASSETS_DIR = Path('assets')
@@ -34,7 +35,7 @@ def copy_assets():
 
 if __name__ == "__main__":
     """create a list of pages"""
-    pages = [home, about, contact, popeye, a404, blackNwhite]
+    pages = [home, about, contact, popeye, a404, blackNwhite, maw]
     """loop over each page and write them"""
     for page in pages:
         """page logo defaults to None. Change path argument to update/replace"""
