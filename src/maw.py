@@ -30,6 +30,17 @@ css = f"""
         padding: 0 1rem;
         font-size: 21px;
     }}
+    #logo {{
+        height: 20vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #aaa;
+        font-family: emoji;
+        font-size: 8rem;
+        background-color: #954;
+        border-radius: 2rem;
+    }}
 """
 style = Style(extra_css=css)
 
@@ -40,6 +51,9 @@ body = f"""
         <li id='fullname'>tejitha yenupuri</li>
         <li id='email'>ytejita95@gmail.com</li>
     </ul>
+    <div id='logo'>
+        ][v|_
+    </div>
 """
 
 page = Page(
