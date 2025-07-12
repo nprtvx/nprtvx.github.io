@@ -8,7 +8,7 @@ from src.contact import page as contact
 from src.popeye import page as popeye
 from src.a404 import page as a404
 from src.blackNwhite import  page as blackNwhite
-from stc.maw import page as maw
+from src.maw import page as maw
 
 TEMPLATES_DIR = Path('templates')
 ASSETS_DIR = Path('assets')
