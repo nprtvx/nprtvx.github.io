@@ -26,7 +26,6 @@ CSS_STYLES = """
             "ELSH" 0,
             "ELXP" 0;
         color: #abcd;
-        height: 50vmin;
         background-color: #8365;
         box-shadow: 0 0 0.5rem 0;
         padding: 2rem;
