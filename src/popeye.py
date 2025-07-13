@@ -16,9 +16,15 @@ CSS_STYLES = """
     
     #try-diff-fonts {
         font-size: 87px;
-        font-family: "Manufacturing Consent", system-ui;
-        font-weight: 400;
+        font-family: "Bitcount Grid Double", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 500;
         font-style: normal;
+        font-variation-settings: 
+            "slnt" 0,
+            "CRSV" 0.5,
+            "ELSH" 0,
+            "ELXP" 0;
         color: #abcd;
         height: 50vmin;
         background-color: #8365;
