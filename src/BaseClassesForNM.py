@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-current_year = datetime.datetime.now().year
+current_year = datetime.now().year
 
 class Style:
     def __init__(self, body_bg="#000000", text_color="#8926", extra_css=""):
