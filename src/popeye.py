@@ -30,6 +30,7 @@ CSS_STYLES = """
         background-color: #8365;
         box-shadow: 0 0 0.5rem 0;
         padding: 2rem;
+        text-transform: uppercase;
     }
 
     @keyframes fadeIn {
