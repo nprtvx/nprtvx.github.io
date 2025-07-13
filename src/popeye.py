@@ -15,7 +15,7 @@ CSS_STYLES = """
     }
     
     #try-diff-fonts {
-            font-size: 30%;
+            font-size: 80%;
             font-family: sans-serif;
             color: #abcd;
             height: 50vmin;
