@@ -10,7 +10,7 @@ class Style:
         self.extra_css = extra_css
 
     def render(self):
-        self.defaultstyle = f"""
+        self.default_style = f"""
 		* {{
 			margin: o;
 			padding: 0;
@@ -40,6 +40,10 @@ class Style:
 			padding: 0 1rem;
 			background-color: #8926;
 		}}
+	"""
+	return f"""
+		{self.default_style}
+		{self.extra_css}
 	"""
 
 class Page:
