@@ -27,7 +27,8 @@ CSS_STYLES = """
             "ELXP" 0;
         color: #abcd;
         background-color: #8365;
-        box-shadow: 0 0 0.5rem 0;
+        box-shadow: 0 0 2rem 0;
+        border-radius: 2rem;
         margin: 2rem;
         width: 80%;
         padding: 2rem;
