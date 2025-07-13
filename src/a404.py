@@ -9,8 +9,9 @@ css = """
 		flex-direction: column;
 	}
 	h1 {
-		font-size: 48px;
+		font-size: 250px;
 		color: #fff8;
+		font-family: emoji;
 	}
 	p {
 		font-size: 18px;

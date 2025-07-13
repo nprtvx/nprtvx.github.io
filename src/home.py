@@ -49,3 +49,12 @@ page = Page(
     style=style,
     filename="index.html"
 )
+
+page.body = page.body + """
+	<div id="">
+		a div element to disaply some text
+		To-Do:
+			change it to a new version
+			new implementation
+	</div>
+"""
