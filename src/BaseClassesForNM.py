@@ -1,4 +1,5 @@
 import os
+import datetime
 
 class Style:
     def __init__(self, body_bg="#000000", text_color="#8926", extra_css=""):
