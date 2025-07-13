@@ -1,7 +1,4 @@
 import os
-from datetime import datetime
-
-current_year = datetime.now().year
 
 class Style:
     def __init__(self, body_bg="#000000", text_color="#8926", extra_css=""):
@@ -25,20 +22,44 @@ class Style:
 
 		#logo {{
 			position: absolute;
-			top: 2.6px;
-			padding: 2rem;
+			top: 2rem;
+			left: 2rem;
+			font-size: 48px;
+			font-family: "Bitcount Grid Double", system-ui;
+			font-optical-sizing: auto;
+			font-weight: 500;
+			font-style: normal;
+			font-variation-settings:
+				"slnt" 0,
+				"CRSV" 0.5,
+				"ELSH" 0,
+				"ELXP" 0;
 		}}
 
 		#menu-lines {{
 			position: absolute;
-			top: 2.6px;
-			right: 2.6px;
-			margin: 2rem;
+			right: 2rem;
+			top: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			flex-direction: coloumn;
 		}}
 
 		#menu-line {{
-			padding: 0 1rem;
+			padding: 2.6px 14px;
 			background-color: #8926;
+			border-radius: 1rem;
+			margin: 4px;
+		}}
+
+		#copy-right {{
+			font-size: 26px;
+			position: absolute;
+			bottom: 2rem;
+			left: 2rem;
+			text-transform: uppercase;
+			font-family: 'Bitcount Grid Double', system-ui;
 		}}
 	"""
         return f"""
@@ -87,7 +108,7 @@ class Page:
 				{self.body}
 
 				<div id='copy-right'>
-					&copy; {title} {current_year}
+					&copy; {title} {datetime.datetime.now().year}
 				</div>
 			</body>
 		</html>
