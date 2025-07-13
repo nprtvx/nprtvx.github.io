@@ -15,16 +15,24 @@ class Style:
 			box-sizing: border-box;
 		}}
 
-		body {{
+		#whole-package {{
 			background-color: {self.body_bg};
 			color: {self.text_color};
-			font-family: monospace;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}}
+
+		#navbar {{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 1rem 2rem;
 		}}
 
 		#logo {{
-			position: absolute;
-			top: 2rem;
-			left: 2rem;
 			font-size: 48px;
 			font-family: "Bitcount Grid Double", system-ui;
 			font-optical-sizing: auto;
@@ -38,9 +46,6 @@ class Style:
 		}}
 
 		#menu-lines {{
-			position: absolute;
-			right: 2rem;
-			top: 2rem;
 			display: flex;
 			align-items: center;
 			justify-content: space-evenly;
@@ -95,21 +100,26 @@ class Page:
 		</head>
         """
 
-        return f"""<!DOCTYPE html>
+        return f"""
+		<!DOCTYPE html>
 		<html lang="en">
 			{self.head_html}
 			<body>
-				<div class='logo' id='logo'>{title}</div>
-				<div class='menu' id='menu-lines'>
-					<span id='menu-line'></span>
-					<span id='menu-line'></span>
-					<span id='menu-line'></span>
-				</div>
+				<div id='whole-package'>
+					<div id='navbar'>
+						<div class='logo' id='logo'>{title}</div>
+						<div class='menu' id='menu-lines'>
+							<span id='menu-line'></span>
+							<span id='menu-line'></span>
+							<span id='menu-line'></span>
+						</div>
+					</div>
 
-				{self.body}
+					{self.body}
 
-				<div id='copy-right'>
-					&copy; {title} {datetime.datetime.now().year}
+					<div id='copy-right'>
+						&copy; {title} {datetime.datetime.now().year}
+					</div>
 				</div>
 			</body>
 		</html>
