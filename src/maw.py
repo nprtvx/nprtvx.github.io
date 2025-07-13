@@ -1,60 +1,28 @@
 from src.BaseClassesForNM import Page, Style
 
 css = f"""
-    #profile {{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 1rem 0;
-        list-style: none;
-    }}
-    #fullname {{
-        color: #29e;
-        font-size: 26px;
-        margin: 1rem 0;
-        text-transform: capitalize;
-    }}
-    #email {{
-        color: #29e;
-        font-size: 26px;
-        margin: 1rem 0;
-    }}
-    h2 {{
-        padding-left: 2rem;
-        font-size: 26px;
-        text-transform: uppercase;
-        color: #954;
-    }}
-    p {{
-        padding: 0 1rem;
-        font-size: 21px;
-    }}
-    #logo {{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #aaa;
-        font-family: emoji;
-        font-size: 8rem;
-        background-color: #954;
-        border-radius: 2rem;
-        width: fit-content;
-        padding: 2rem;
-    }}
+	#maw-img {{
+		position: absolute;
+		width: 250px;
+		height: 420px;
+		border-radius: 2rem;
+		padding: 2.6px;
+		background: #0004;
+	}}
 """
 style = Style(extra_css=css)
 
 body = f"""
-    <h2>profile</h2>
-    <p>strong, independent dentist from india working in the usa as a full time lead co-ordinator at "soul dental" west</p>
-    <ul id='profile'>
-        <li id='fullname'>tejitha yenupuri</li>
-        <li id='email'>ytejita95@gmail.com</li>
-    </ul>
-    <div id='logo'>
-        ][v|_
-    </div>
+	<div id='maw-img'>
+		<img src='https://www.canva.com/content-partner/?utm_medium=acquisitions&utm_source=pexels&utm_campaign=predownload%20button&utm_content=edit%20in%20canva&external-id=792222&image-url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F792222%2Fpexels-photo-792222.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D8000%26h%3D8000%26fit%3Dmax' alt='profile-image' />
+	</div>
+	<div id='profile-details>
+		<ul id='maw-details'>
+			<li class='profile-details' id='fullname'></li>
+			<li class='profile-details' id='email'></li>
+			<li class='profile-details' id='phone'></li>
+		</ul>
+	</div>
 """
 
 page = Page(

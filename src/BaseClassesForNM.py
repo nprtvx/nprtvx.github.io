@@ -10,7 +10,7 @@ class Style:
     def render(self):
         self.default_style = f"""
 		* {{
-			margin: o;
+			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
 		}}
