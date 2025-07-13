@@ -128,7 +128,7 @@ class Page:
 		<html lang="en">
 			{self.head_html}
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Manufacturing+Consent&display=swap');
             </style>
 			<body>
 				<div id="nm-navbar">
