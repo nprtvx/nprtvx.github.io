@@ -57,4 +57,13 @@ page.body = page.body + """
 			change it to a new version
 			new implementation
 	</div>
+	<style>
+		#adivelement {
+			width: 48%;
+			height: 26%;
+			background-color: #489429;
+			border-radius: 2rem;
+			box-shadow: 0 0 0.5rem 0 inset;
+		}
+	</style>
 """
