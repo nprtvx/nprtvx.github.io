@@ -15,14 +15,16 @@ CSS_STYLES = """
     }
     
     #try-diff-fonts {
-            font-size: 180%;
-            font-family: sans-serif;
-            color: #abcd;
-            height: 50vmin;
-            background-color: #8365;
-            box-shadow: 0 0 0.5rem 0;
-            padding: 2rem;
-        }
+        font-size: 180%;
+        font-family: "Manufacturing Consent", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: #abcd;
+        height: 50vmin;
+        background-color: #8365;
+        box-shadow: 0 0 0.5rem 0;
+        padding: 2rem;
+    }
 
     @keyframes fadeIn {
         from {
@@ -88,6 +90,9 @@ page.body = page.body + """
     <div id="try-diff-fonts">
         just a logo
     </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+    </style>
 """
 page.style.extra_css = page.style.extra_css + """
 	#animated-bouncing-ball {
