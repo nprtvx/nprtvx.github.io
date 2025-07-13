@@ -50,13 +50,13 @@ CSS_STYLES = """
             opacity: 0;
         }
         20% {
-            opacity: 0.2;
+            opacity: 1;
         }
         40% {
             opacity: 0.4;
         }
         60% {
-            opacity: 0.6;
+            opacity: 1;
         }
         80% {
             opacity: 0.8;
