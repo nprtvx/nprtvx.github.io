@@ -1,102 +1,45 @@
 import os
 
 class Style:
-    def __init__(self, body_bg="#000000", text_color="#29e", extra_css=""):
+    def __init__(self, body_bg="#000000", text_color="#8926", extra_css=""):
         self.body_bg = body_bg
         self.text_color = text_color
         self.extra_css = extra_css
 
     def render(self):
         self.defaultstyle = f"""
-            * {{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }}
-
-            body {{
-                background-color: {self.body_bg};
-                color: {self.text_color};
-                font-family: monospace;
-            }}
-            .nm-navbar, .landing-poster {{
-		display: flex;
-            }}
-        """
-
-        self.logo_img = f"""
-            #nm-logo-img {{
-                margin: 0 1rem;
-                width: 100%;
-                box-shadow: 0 0 0 0.2rem #29e inset;
-                border-radius: 0.5rem;
-            }}
-            #img-link-logo {{
-                width: 8vmin;
-            }}
-        """
-
-        self.nm_menu_item = f"""
-		#nm-menu-item {{
-        		text-decoration: none;
-        		font-size: 1.5em;
-        		text-transform: uppercase;
-			letter-spacing: 0.2em;
-			color: whitesmoke;
-			opacity: 0.5;
-			padding: 1em;
-        	}}
-
-		#nm-menu-item:hover {{
-			padding: 1em;
-			border: 1em #29eaea87;
-			border-radius: 2em;
+		* {{
+			margin: o;
+			padding: 0;
+			box-sizing: border-box;
 		}}
-        """
 
-        self.navbar_menu_nm = f"""
-            #navbar-menu-nm {{
-        		display: flex;
-        		align-items: center;
-        		justify-content: space-between;
-        		list-style: none;
-        	}}
+		@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Manufacturing+Consent&display=swap');
 
-            {self.nm_menu_item}
-        """
-
-        self.navbar = f"""
-            #nm-navbar {{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                height: 10vh;
-		position: sticky;
-		top: 0;
-            }}
-
-            {self.logo_img}
-            {self.navbar_menu_nm}
-        """
-
-        self.footer_nm = f"""
-		#nm-footer {{
-			box-shadow: 0 0 3em #fff8 inset;
-			padding: 0 1em;
+		body {{
+			background-color: {self.body_bg};
+			color: {self.text_color};
+			font-family: monospace;
 		}}
-		#footer-copy {{
-			text-shadow: 0 0 #0008;
-			color: transparent;
-			margin: 1em 0;
-		}}
-        """
 
-        return f"""
-            {self.defaultstyle}
-            {self.navbar}
-            {self.extra_css}
-            {self.footer_nm}
-        """
+		#logo {{
+			position: absolute;
+			top: 2.6px;
+			padding: 2rem;
+		}}
+
+		#menu-lines {{
+			position: absolute;
+			top: 2.6px;
+			right: 2.6px;
+			margin: 2rem;
+		}}
+
+		#menu-line {{
+			padding: 0 1rem;
+			background-color: #8926;
+		}}
+	"""
 
 class Page:
     def __init__(self, title, body, links=None, style=None, filename="page.html", logo=None):
@@ -127,26 +70,18 @@ class Page:
         return f"""<!DOCTYPE html>
 		<html lang="en">
 			{self.head_html}
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Manufacturing+Consent&display=swap');
-            </style>
 			<body>
-				<div id="nm-navbar">
-					<a href="/" id="img-link-logo">
-						<img src={self.logo} id="nm-logo-img" alt="LOGO-NM">
-					</a>
-
-					<ul id="navbar-menu-nm">
-						<li id='li-menu-item'><a href="/about/" id="nm-menu-item">about</a></li>
-						<li id='li-menu-item'><a href="/contact/" id="nm-menu-item">contact</a></li>
-						<li id='li-menu-item'><a href="/404/" id="nm-menu-item">404</a></li>
-					</ul>
+				<div class='logo' id='logo'>{title}</div>
+				<div class='menu' id='menu-lines'>
+					<span id='menu-line'></span>
+					<span id='menu-line'></span>
+					<span id='menu-line'></span>
 				</div>
 
 				{self.body}
 
-				<div id='nm-footer'>
-					<div id='footer-copy'>&copy 2025 {str('neon monkey'.upper())}</div>
+				<div id='copy-right'>
+					&copy; {title} {from datetime import datetime; current_year = datetime.datetime.now().year); current_year}
 				</div>
 			</body>
 		</html>
