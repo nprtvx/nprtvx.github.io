@@ -107,7 +107,7 @@ class Page:
 			<body>
 				<div id='whole-package'>
 					<div id='navbar'>
-						<div class='logo' id='logo'>{title}</div>
+						<a class='logo' id='logo'>{title}</a>
 						<div class='menu' id='menu-lines'>
 							<span id='menu-line'></span>
 							<span id='menu-line'></span>
