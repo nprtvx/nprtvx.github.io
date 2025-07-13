@@ -127,7 +127,9 @@ class Page:
         return f"""<!DOCTYPE html>
 		<html lang="en">
 			{self.head_html}
-
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+            </style>
 			<body>
 				<div id="nm-navbar">
 					<a href="/" id="img-link-logo">
