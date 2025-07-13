@@ -44,7 +44,7 @@ class Style:
 			display: flex;
 			align-items: center;
 			justify-content: space-evenly;
-			flex-direction: coloumn;
+			flex-direction: column;
 		}}
 
 		#menu-line {{
@@ -89,7 +89,7 @@ class Page:
 			<title>{title +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
 			<link rel="icon" href="/assets/favicon.ico">
 			<style>
-				@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Manufacturing+Consent&display=swap');
+				@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Permanent+Marker&display=swap');
 				{self.style.render()}
 			</style>
 		</head>
