@@ -51,7 +51,7 @@ page = Page(
 )
 
 page.body = page.body + """
-	<div id="">
+	<div id="adivelement">
 		a div element to disaply some text
 		To-Do:
 			change it to a new version
