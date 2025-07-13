@@ -41,7 +41,7 @@ class Style:
 			background-color: #8926;
 		}}
 	"""
-	return f"""
+        return f"""
 		{self.default_style}
 		{self.extra_css}
 	"""
