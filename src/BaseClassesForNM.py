@@ -48,7 +48,7 @@ class Page:
         self.logo = logo
         self.body = body
         self.links = links or []
-        self.style = style or Style()
+        self.style = Style()
         self.filename = filename
 
     def render(self):
