@@ -28,6 +28,8 @@ CSS_STYLES = """
         color: #abcd;
         background-color: #8365;
         box-shadow: 0 0 0.5rem 0;
+        margin: 2rem;
+        width: 80%;
         padding: 2rem;
         text-transform: uppercase;
     }
