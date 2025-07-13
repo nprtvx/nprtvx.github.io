@@ -1,4 +1,7 @@
 import os
+from datetime import datetime
+
+current_year = datetime.datetime.now().year
 
 class Style:
     def __init__(self, body_bg="#000000", text_color="#8926", extra_css=""):
@@ -81,7 +84,7 @@ class Page:
 				{self.body}
 
 				<div id='copy-right'>
-					&copy; {title} {from datetime import datetime; current_year = datetime.datetime.now().year); current_year}
+					&copy; {title} {current_year}
 				</div>
 			</body>
 		</html>
