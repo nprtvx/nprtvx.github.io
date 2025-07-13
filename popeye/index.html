@@ -84,6 +84,15 @@
         animation: fadeIn 2s ease-in-out;
     }
     
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
     #try-diff-fonts {
         font-size: 87px;
         font-family: "Bitcount Grid Double", system-ui;
@@ -103,17 +112,30 @@
         width: 80%;
         padding: 2rem;
         text-transform: uppercase;
+        animate: something 1s inifinite;
     }
-
-    @keyframes fadeIn {
-        from {
+    
+    @keyframes something {
+        0% {
             opacity: 0;
         }
-        to {
+        20% {
+            opacity: 0.2;
+        }
+        40% {
+            opacity: 0.4;
+        }
+        60% {
+            opacity: 0.6;
+        }
+        80% {
+            opacity: 0.8;
+        }
+        100% {
             opacity: 1;
         }
     }
-
+    
     .animated-box {
         width: 100px;
         height: 100px;
