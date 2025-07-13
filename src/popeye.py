@@ -15,7 +15,7 @@ CSS_STYLES = """
     }
     
     #try-diff-fonts {
-        font-size: 48px;
+        font-size: 87px;
         font-family: "Manufacturing Consent", system-ui;
         font-weight: 400;
         font-style: normal;
