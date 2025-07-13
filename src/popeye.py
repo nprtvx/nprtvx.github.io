@@ -73,6 +73,23 @@ page.body = page.body + """
 		animated bouncing ball
 	</div>
 """
+
+page.body = page.body + """
+    <div id="try-diff-fonts">
+        just a logo
+    </div>
+    <style>
+        #try-diff-fonts {{
+            font-size: 30%;
+            font-family: sans-serif;
+            color: #abcd;
+            height: 50vmin;
+            background-color: #8365;
+            box-shadow: 0 0 0.5rem 0;
+            padding: 2rem;
+        }}
+    </style>
+"""
 page.style.extra_css = page.style.extra_css + """
 	#animated-bouncing-ball {
 		width: 25px;
