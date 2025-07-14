@@ -1,5 +1,6 @@
 # popeye dot py
 
+import Popeye
 
 title = "nMe of yge app".title()
 
