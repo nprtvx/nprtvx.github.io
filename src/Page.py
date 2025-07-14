@@ -1,3 +1,6 @@
+import os
+import datetime
+
 class Page:
     def __init__(self, title, body, links=None, style=None, filename="page.html", logo=None):
         self.title = title
