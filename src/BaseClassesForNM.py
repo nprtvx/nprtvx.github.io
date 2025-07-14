@@ -18,6 +18,7 @@ class Style:
 		body {{
 				background-color: {self.body_bg};
 				color: {self.text_color};
+				overflow: hidden;
 		}}
 
 		#whole-package {{
