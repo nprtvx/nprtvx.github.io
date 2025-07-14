@@ -45,6 +45,11 @@ CSS_STYLES = """
 	90% {
             transform: translateY(-20px);
     }
+    
+    #intro {
+        font-size: 26px;
+        padding-left: 2em;
+    }
 """
 
 # HTML body for the Popeye page
