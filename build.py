@@ -45,10 +45,10 @@ if __name__ == "__main__":
     copy_templates()
     copy_assets()
     print(f"Static site generated in {OUTPUT_DIR}")
-    
+
     try:
         print("importing...")
         from cars import vroooom
         print("vr0000m")
-    except ImportNotFoundException as exc:
+    except Exception as exc:
         print("import_failed".strip('_'))
