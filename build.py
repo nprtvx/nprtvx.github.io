@@ -50,5 +50,5 @@ if __name__ == "__main__":
         print("importing...")
         from cars import vroooom
         print("vr0000m")
-    except ImportNotFoundException exc:
+    except ImportNotFoundException as exc:
         print("import_failed".strip('_'))

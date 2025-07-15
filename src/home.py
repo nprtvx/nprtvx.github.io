@@ -25,9 +25,6 @@ landing_poster = f"""
 
 body = f"""
 	{landing_poster}
-	<div id='hor-line'>
-		<hr>
-	</div>
 """
 
 page = Page(
@@ -37,3 +34,7 @@ page = Page(
     style=style,
     filename="index.html"
 )
+
+page.body = """
+	<div id='App'></div>
+"""
