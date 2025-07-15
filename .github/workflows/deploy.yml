@@ -21,8 +21,6 @@ jobs:
       # Activate a virtual environment
       - name: Activate venv
         run: |
-          permissions:
-            contents: read # access to check out code and install dependencies
           python -m venv .newvenv
           source .newvenv/bin/activate
           
