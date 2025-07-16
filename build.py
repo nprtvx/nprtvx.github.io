@@ -35,8 +35,8 @@ if __name__ == "__main__":
             """page logo defaults to None. Change path argument to update/replace"""
             if not page.logo:
                 page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
-        """write page"""
-        page.write()
+        	"""write page"""
+	        page.write()
         print("wrote home page")
     except Exception as exc:
         print(" page failed", exc)
