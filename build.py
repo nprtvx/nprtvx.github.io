@@ -35,7 +35,7 @@ def copy_assets():
 
 if __name__ == "__main__":
     """create a list of pages"""
-    pages = [home, about, contact, popeye, a404, blackNwhite]
+    pages = [home]
     """loop over each page and write them"""
     for page in pages:
         """page logo defaults to None. Change path argument to update/replace"""
