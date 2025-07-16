@@ -56,3 +56,8 @@ page.body += f"""
 		}}
 	</style>
 """
+page.body += f"""
+	<svg xmlns='https://www.w3.org/2000/svg/' viewbox='0 0 100 300'>
+		<polygon points='16,92 8,52 8,8 26,8 50,50 16,16' fill='#892" />
+	</svg>
+"""
