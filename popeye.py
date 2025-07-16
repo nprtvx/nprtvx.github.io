@@ -11,6 +11,7 @@
 #from src.a404 import page as a404
 #from src.blackNwhite import  page as blackNwhite
 #from src import cars
+print("👾👾👾👾")
 from src.popeye import page
 # ## ######
 page.body = f"""
