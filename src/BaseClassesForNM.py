@@ -94,7 +94,10 @@ class Page:
     def render(self):
         title = str('ne0NM0NkEy'.title())
         title = title.strip()
-        title = ' '.join(title)
+        title1 = ' '.join(title[:2])
+        title2 = title[3:7]
+	title3 = ' '.join(title[7:])
+	title = title1+title2+title3
         links_html = " | ".join(
             f'<a href="{href}">{text}</a>' for text, href in self.links
         )
