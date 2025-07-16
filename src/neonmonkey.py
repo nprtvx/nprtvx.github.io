@@ -12,4 +12,4 @@ for letter in title:
 		TITLE += '0'
 	else:
 		pass
-title = ' '.join(title)
+title = ' '.join(TITLE)
