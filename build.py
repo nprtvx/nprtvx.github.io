@@ -28,6 +28,12 @@ def copy_assets():
 
 if __name__ == "__main__":
     try:
+        popeye.home.page.write()
+        print("wrote home page")
+    except Exception as exc:
+        print("home page failed")
+# ## ###
+    try:
         print("templates")
         copy_templates()
         copy_assets()
