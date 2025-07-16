@@ -41,7 +41,8 @@ class Style:
 			align-items: center;
 			text-decoration: none;
 			justify-content: space-evenly;
-			font-size: 48px;
+			font-size: 39px;
+			color: #8926;
 			font-family: "Bitcount Grid Double", system-ui;
 			font-optical-sizing: auto;
 			font-weight: 500;
