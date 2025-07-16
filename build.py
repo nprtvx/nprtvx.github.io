@@ -35,6 +35,7 @@ def copy_assets():
 
 if __name__ == "__main__":
     try:
+        import popeye
         copy_templates()
         copy_assets()
         print(f"Static site generated in {OUTPUT_DIR}")
