@@ -1,5 +1,5 @@
 class Car:
-    def __init__(self, car: Car=None, car_name: str=None):
+    def __init__(self, car: Car | None = None, car_name: str | None = None):
         self.car = car
         self.car_name = car_name
     def drive(self):
