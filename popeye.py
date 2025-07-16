@@ -11,7 +11,7 @@
 #from src.a404 import page as a404
 #from src.blackNwhite import  page as blackNwhite
 #from src import cars
-from src import popeye
+from src import popeye.popeye as POPEYE
 # ## ######
 body = f"""
     <div id="popeye"></div>
@@ -20,5 +20,5 @@ body = f"""
 # ## ######
 
 # ## ######
-HOME = popeye.popeye
+HOME = POPEYE
 # ## ######
