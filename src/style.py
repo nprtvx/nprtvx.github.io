@@ -62,10 +62,10 @@ class Style:
 		}}
 
 		#menu-line {{
-			padding: 2.6px 14px;
+			padding: 3px 36px;
 			background-color: #8926;
 			border-radius: 1rem;
-			margin: 4px;
+			margin: 8px;
 		}}
 
 		#copy-right {{
