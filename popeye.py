@@ -13,7 +13,7 @@ from src import home
 #from src import cars
 
 # ## ######
-home.page.body += f"""
+home.page.body = f"""
     <div id="popeye"></div>
 """
 
