@@ -19,9 +19,20 @@ body = f"""
 
 # ## ######
 popeye = body
-home.body = popeye
 
-
+# ## ######
+if __name__=="__main__":
+    """create a list of pages"""
+    pages = [home]
+    """loop over each page and write them"""
+    for page in pages:
+        """page logo defaults to None. Change path argument to update/replace"""
+        if not page.logo:
+            page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
+        """append body"""
+        page.body = popeye
+        """write page"""
+        page.write()
 
 #EoF
 
