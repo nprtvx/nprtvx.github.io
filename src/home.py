@@ -2,16 +2,6 @@ from src.page import Page
 from src.style import Style
 
 css = f"""
-	.landing-poster {{
-	        margin-top: 8rem;
-	}}
-
-	#landing-poster-heading {{
-		font-size: 26px;
-		letter-spacing: 2.6px;
-		padding-left: 2em;
-	}}
-
 """
 style = Style(extra_css=css)
 
