@@ -34,17 +34,12 @@ def copy_assets():
     print(f"Copied {ASSETS_DIR} to {dst_assets}")
 
 if __name__ == "__main__":
-    """create a list of pages"""
-    pages = [home]
-    """loop over each page and write them"""
-    for page in pages:
-        """page logo defaults to None. Change path argument to update/replace"""
-        if not page.logo:
-            page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
-        page.write()
-    copy_templates()
-    copy_assets()
-    print(f"Static site generated in {OUTPUT_DIR}")
+    try:
+        copy_templates()
+        copy_assets()
+        print(f"Static site generated in {OUTPUT_DIR}")
+    except Exception as exc:
+        print(exc.printStackTrace())
 
     try:
         print("importing...")
