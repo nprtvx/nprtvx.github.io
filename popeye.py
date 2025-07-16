@@ -4,7 +4,7 @@
 ## ## 👾👾👾👾
 
 # ## ###### import home
-from src.home import page as home
+from src import home
 #from src.about import page as about
 #from src.contact import page as contact
 #from src.popeye import page as popeye
@@ -13,24 +13,24 @@ from src.home import page as home
 #from src import cars
 
 # ## ######
-body = f"""
+home.page.body += f"""
     <div id="popeye"></div>
 """
 
 # ## ######
-popeye = body
+
+# ## ######
+popeye = home.page.body
 
 # ## ######
 if __name__=="__main__":
     """create a list of pages"""
-    pages = [home]
+    pages = [HOME]
     """loop over each page and write them"""
     for page in pages:
         """page logo defaults to None. Change path argument to update/replace"""
         if not page.logo:
             page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
-        """append body"""
-        page.body = popeye
         """write page"""
         page.write()
 
