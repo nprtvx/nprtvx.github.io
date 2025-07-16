@@ -21,61 +21,6 @@ class Style:
 				overflow: hidden;
 		}}
 
-		#whole-package {{
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}}
-
-		#navbar {{
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: 1rem 2rem;
-		}}
-
-		#logo {{
-			display: flex;
-			align-items: center;
-			text-decoration: none;
-			justify-content: space-evenly;
-			font-size: 63px;
-			color: #8926;
-			font-family: "Bitcount Grid Double", system-ui;
-			font-optical-sizing: auto;
-			font-weight: 500;
-			font-style: normal;
-			font-variation-settings:
-				"slnt" 0,
-				"CRSV" 0.5,
-				"ELSH" 0,
-				"ELXP" 0;
-		}}
-
-		#menu-lines {{
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-			flex-direction: column;
-		}}
-
-		#menu-line {{
-			padding: 3px 36px;
-			background-color: #8926;
-			border-radius: 1rem;
-			margin: 8px;
-		}}
-
-		#copy-right {{
-			font-size: 26px;
-			position: absolute;
-			bottom: 2rem;
-			left: 2rem;
-			text-transform: uppercase;
-			font-family: 'Bitcount Grid Double', system-ui;
-		}}
 	"""
         return f"""
 		{self.default_style}
