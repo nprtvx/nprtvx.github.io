@@ -1,14 +1,7 @@
 #! bin/python
 from pathlib import Path
 import shutil
-
-from src.home import page as home
-#from src.about import page as about
-#from src.contact import page as contact
-#from src.popeye import page as popeye
-#from src.a404 import page as a404
-#from src.blackNwhite import  page as blackNwhite
-#from src import cars
+import popeye
 
 TEMPLATES_DIR = Path('templates')
 ASSETS_DIR = Path('assets')
@@ -35,7 +28,7 @@ def copy_assets():
 
 if __name__ == "__main__":
     try:
-        import popeye
+        print("templates")
         copy_templates()
         copy_assets()
         print(f"Static site generated in {OUTPUT_DIR}")
