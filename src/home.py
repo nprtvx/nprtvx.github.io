@@ -61,11 +61,6 @@ import src.neonmonkey as neonmonkey
 
 #home.body = vroom.body
 
-import popeye
-
-page.body = popeye.body
-
-
 
 ### EoF
 
