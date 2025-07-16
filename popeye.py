@@ -14,3 +14,8 @@ class Page:
 def defaults():
     return self.baseHtml or BaseHtml()
 """)
+
+
+body = f"""
+    <div id="popeye"></div>
+"""
