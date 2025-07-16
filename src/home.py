@@ -67,3 +67,6 @@ import src.neonmonkey as neonmonkey
 	</svg>
 """
 
+from cars import vrzerozerom as vroom
+
+home.body = vroom.body
