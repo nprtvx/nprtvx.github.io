@@ -21,7 +21,7 @@ home.page.body += f"""
 
 # ## ######
 popeye = home.page.body
-
+HOME = home
 # ## ######
 if __name__=="__main__":
     """create a list of pages"""
