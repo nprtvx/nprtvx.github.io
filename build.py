@@ -1,7 +1,7 @@
 #! bin/python
 from pathlib import Path
 import shutil
-import popeye
+from popeye import HOME as POPEYE
 
 TEMPLATES_DIR = Path('templates')
 ASSETS_DIR = Path('assets')
@@ -29,7 +29,7 @@ def copy_assets():
 if __name__ == "__main__":
     try:
         """create a list of pages"""
-        pages = [popeye.page]
+        pages = [POPEYE]
         """loop over each page and write them"""
         for page in pages:
             """page logo defaults to None. Change path argument to update/replace"""
