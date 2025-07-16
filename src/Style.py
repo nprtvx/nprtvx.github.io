@@ -1,5 +1,5 @@
-
-
+import os
+import datetime
 
 class Style:
     def __init__(self, body_bg="#000000", text_color="#8926", extra_css=""):
@@ -14,7 +14,7 @@ class Style:
 			padding: 0;
 			box-sizing: border-box;
 		}}
-		
+
 		body {{
 				background-color: {self.body_bg};
 				color: {self.text_color};
@@ -37,7 +37,12 @@ class Style:
 		}}
 
 		#logo {{
-			font-size: 48px;
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			justify-content: space-evenly;
+			font-size: 39px;
+			color: #8926;
 			font-family: "Bitcount Grid Double", system-ui;
 			font-optical-sizing: auto;
 			font-weight: 500;

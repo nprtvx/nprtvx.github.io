@@ -1,4 +1,4 @@
-from src.BaseClassesForNM import Style, Page
+import Style, Page
 
 body = """
 	<div id="animated-bouncing-ball" style="

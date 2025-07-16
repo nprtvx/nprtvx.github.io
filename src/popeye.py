@@ -1,4 +1,4 @@
-from src.BaseClassesForNM import Style, Page
+import Style, Page
 
 # CSS styles for the Popeye page
 CSS_STYLES = """
