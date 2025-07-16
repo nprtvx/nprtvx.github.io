@@ -103,7 +103,7 @@ class Page:
 			</style>
 		</head>
         """
-	self.body_html = f"""
+        self.body_html = f"""
 		<body>
 			<div id='whole-package'>
 				<div id='navbar'>
