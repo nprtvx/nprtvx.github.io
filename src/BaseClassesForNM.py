@@ -95,7 +95,7 @@ class Page:
         title = str('Ne0NM0NkEy')
         title = title.strip()
         title1 = ' '.join(title[:3])
-        title2 = title[4:7]+ ' '
+        title2 = title[3:7]+ ' '
         title3 = ' '.join(title[7:])
         title = title1+title2+title3
         links_html = " | ".join(
