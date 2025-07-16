@@ -1,7 +1,6 @@
 
 
 
-from src import home
 vr0000m = " vroooom ".capitalize();
 
 body = f"""
