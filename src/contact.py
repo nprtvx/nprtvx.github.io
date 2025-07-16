@@ -1,4 +1,5 @@
-from src.BaseClassesForNM import Page, Style
+from src.page import Page
+from src.style import Style
 
 css = """
     h1 { text-transform: uppercase; }

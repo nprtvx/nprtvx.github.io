@@ -1,12 +1,7 @@
 #! bin/python
 from pathlib import Path
 import shutil
-
-from src.home import page as home
-from src.about import page as about
-from src.contact import page as contact
-from src.popeye import page as popeye
-from src.a404 import page as a404
+from popeye import HOME as POPEYE
 
 TEMPLATES_DIR = Path('templates')
 ASSETS_DIR = Path('assets')
@@ -33,13 +28,18 @@ def copy_assets():
 
 if __name__ == "__main__":
     """create a list of pages"""
-    pages = [home, about, contact, popeye, a404]
+    pages = [POPEYE]
     """loop over each page and write them"""
     for page in pages:
         """page logo defaults to None. Change path argument to update/replace"""
         if not page.logo:
             page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
+        """write page"""
         page.write()
+        print("wrote home page")
+    print("templates")
     copy_templates()
     copy_assets()
     print(f"Static site generated in {OUTPUT_DIR}")
+
+# EoF
