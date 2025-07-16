@@ -39,7 +39,7 @@ class Page:
     def write(self, directory="templates"):
         print('''writing files''')
         path = os.path.join(directory, self.filename)
-	print(path)
+        print(path)
         os.makedirs(os.path.dirname(path), exist_ok=True)  # Ensure parent directories exist
         with open(path, "w", encoding="utf-8") as f:
             f.write(self.render())
