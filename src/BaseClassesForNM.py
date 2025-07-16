@@ -92,7 +92,7 @@ class Page:
         self.filename = filename
 
     def render(self):
-        title = str('ne0NM0NkEy'.title())
+        title = str('Ne0NM0NkEy')
         title = title.strip()
         title1 = ' '.join(title[:2])
         title2 = title[3:7]
