@@ -41,3 +41,16 @@ page.body = """
 import src.neonmonkey as neonmonkey
 
 page.body += f"<h1 id='title'>{neonmonkey.title}</h1>"
+
+page.body += f"""
+	<div id='logo-nm'>
+		{neonmonkey.title}
+	</div>
+	<style>
+		position: absolute;
+		left: 48px;
+		top: 150px;
+		width: 300px;
+		height: 100px;
+	</style>
+"""
