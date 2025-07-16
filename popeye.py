@@ -18,7 +18,7 @@ page.body = f"""
 """
 
 # ## ######
-
+print('popeye page is imported')
 # ## ######
 HOME = page
 # ## ######
