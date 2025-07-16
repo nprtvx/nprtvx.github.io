@@ -1,6 +1,6 @@
 class Car:
-    def __init__(self, car: Car | None = None, car_name: str | None = None):
-        self.car = car
+    def __init__(self, car_name: str | None = None):
+        #self.car = car
         self.car_name = car_name
     def drive(self):
         pass
