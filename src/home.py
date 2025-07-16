@@ -47,12 +47,12 @@ page.body += f"""
 		{neonmonkey.title}
 	</div>
 	<style>
-		#logo-nm {
+		#logo-nm {{
 			position: absolute;
 			left: 48px;
 			top: 150px;
 			width: 300px;
 			height: 100px;
-		}
+		}}
 	</style>
 """
