@@ -20,7 +20,7 @@ body = f"""
 # ## ######
 
 # ## ######
-HOME = popeye.popeye
+HOME = popeye.page
 # ## ######
 if __name__=="__main__":
     """create a list of pages"""
