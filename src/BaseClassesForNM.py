@@ -39,7 +39,8 @@ class Style:
 		#logo {{
 			display: flex;
 			align-items: center;
-			
+			text-decoration: none;
+			justify-content: space-evenly;
 			font-size: 48px;
 			font-family: "Bitcount Grid Double", system-ui;
 			font-optical-sizing: auto;
@@ -91,8 +92,8 @@ class Page:
 
     def render(self):
         title = str('ne0NM0NkEy'.title())
-	title = title.strip()
-	title = ' '.join(title)
+        title = title.strip()
+        title = ' '.join(title)
         links_html = " | ".join(
             f'<a href="{href}">{text}</a>' for text, href in self.links
         )
