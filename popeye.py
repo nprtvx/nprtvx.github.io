@@ -13,14 +13,14 @@ from src import home
 #from src import cars
 
 # ## ######
-home.page.body = f"""
+body = f"""
     <div id="popeye"></div>
 """
 
 # ## ######
 
 # ## ######
-popeye = home.page.body
+popeye = body
 HOME = home
 # ## ######
 if __name__=="__main__":
