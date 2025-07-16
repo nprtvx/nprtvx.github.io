@@ -11,14 +11,14 @@
 #from src.a404 import page as a404
 #from src.blackNwhite import  page as blackNwhite
 #from src import cars
-from src.popeye import page as POPEYE
+from src.popeye import page
 # ## ######
-body = f"""
+page.body = f"""
     <div id="popeye"></div>
 """
 
 # ## ######
 
 # ## ######
-HOME = POPEYE
+HOME = page
 # ## ######
