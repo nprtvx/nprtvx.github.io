@@ -3,7 +3,7 @@ from src.style import Style
 
 style = Style()
 
-page = Page(title="popeye", body="", style=style, filename='popeye/index.html')
+page = Page(title="popeye", body="", style=style, filename='index.html')
 
 
 vr0000m = " vroooom ".capitalize();
