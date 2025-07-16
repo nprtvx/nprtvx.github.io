@@ -11,5 +11,5 @@ for letter in title:
 	elif letter == 'o':
 		TITLE += '0'
 	else:
-		pass
+		TITLE += letter
 title = ' '.join(TITLE)
