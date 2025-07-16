@@ -38,6 +38,6 @@ page = Page(
 page.body = """
 	<div id='App'></div>
 """
-import src.neonmonkey
+import src.neonmonkey as neonmonkey
 
 page.body += f"<h1 id='title'>{neonmonkey.title}</h1>"
