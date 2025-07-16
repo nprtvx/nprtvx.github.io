@@ -3,12 +3,11 @@ from src.style import Style
 
 style = Style()
 
-page = Page(title="popeye", body="", style=style, filename='index.html')
-
-
 vr0000m = " vroooom ".capitalize();
 
-page.body += f"""
+body = f"""
     <div id="vroom">{vr0000m}</div>
 """
+
+page = Page(title="popeye", body=body, style=style, filename='index.html')
 
