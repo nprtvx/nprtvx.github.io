@@ -57,7 +57,8 @@ page.body += f"""
 	</style>
 """
 page.body += f"""
-	<svg xmlns='https://www.w3.org/2000/svg/' viewbox='0 0 100 300'>
-		<polygon points='16,92 8,52 8,8 26,8 50,50 16,16' fill='#892'></polygon>
+	<svg xmlns="https://www.w3.org/2000/svg/" viewBox="0 0 100 100">
+		<polygon points="16,92 8,52 8,8 26,8 50,50 68,8 84,8 92,8 92,52 84,92 50,50 16,16 16,92" fill="#892"></polygon>
+		<polygon points="50,50 76,16 84,16 84,68 50,50" fill="#900"></polygon>
 	</svg>
 """
