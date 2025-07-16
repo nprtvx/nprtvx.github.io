@@ -1,7 +1,7 @@
 class Car:
     def __init__(self, car: Car=None, car_name: str=None):
-        self.car = car if car is not None else Car()
-        self.car_name = car if not None
+        self.car = car
+        self.car_name = car_name
     def drive(self):
         pass
     def create(self,user_name: str=None):
