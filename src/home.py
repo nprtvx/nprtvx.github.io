@@ -73,7 +73,7 @@ import src.neonmonkey as neonmonkey
 
 import popeye
 
-home.body = popeye.body
+page.body = popeye.body
 
 
 
