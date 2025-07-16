@@ -14,7 +14,7 @@ class Style:
 			padding: 0;
 			box-sizing: border-box;
 		}}
-		
+
 		body {{
 				background-color: {self.body_bg};
 				color: {self.text_color};
