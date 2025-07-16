@@ -28,7 +28,7 @@ def copy_assets():
 
 if __name__ == "__main__":
     try:
-        popeye.home.page.write()
+        popeye.popeye.page.write()
         print("wrote home page")
     except Exception as exc:
         print("home page failed")
