@@ -4,7 +4,7 @@ title = str("neonmonkey").title()
 
 
 title = title.strip('')
-
+TITLE =''
 for letter in title:
 	if letter.lower() in ['n', 'm', 'e']:
 		TITLE += letter.upper()
