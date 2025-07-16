@@ -39,7 +39,7 @@ if __name__ == "__main__":
         page.write()
         print("wrote home page")
     except Exception as exc:
-        print(" page failed")
+        print(" page failed", exc)
 # ## ###
     try:
         print("templates")
