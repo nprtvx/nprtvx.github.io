@@ -11,3 +11,6 @@ vr0000m = " vroooom ".capitalize();
 page.body += f"""
     <div id="vroom">{vr0000m}</div>
 """
+
+if __init__=="__main__":
+    
