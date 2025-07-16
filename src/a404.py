@@ -1,4 +1,5 @@
-import Page, Style
+from page import Page
+from style import Style
 
 css = """
 	div#page-404 {

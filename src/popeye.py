@@ -1,4 +1,5 @@
-import Style, Page
+from page import Page
+from style import Style
 
 # CSS styles for the Popeye page
 CSS_STYLES = """

@@ -1,4 +1,5 @@
-from src.BaseClassesForNM import Page, Style
+from page import Page
+from style import Style
 
 css = f"""
 	#maw-img {{

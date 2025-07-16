@@ -1,4 +1,5 @@
-import Page, Style
+from page import Page
+from style import Style
 
 css = """
     h1 { text-transform: uppercase; }

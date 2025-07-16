@@ -1,4 +1,5 @@
-import Style, Page
+from page import Page
+from style import Style
 
 body = """
 	<div id="animated-bouncing-ball" style="
