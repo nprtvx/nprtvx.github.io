@@ -1,5 +1,7 @@
 # popeye dot py
 
+
+print(
 import Popeye
 
 title = "nMe of yge app".title()
@@ -13,3 +15,4 @@ class Page:
                 pass
 def defaults():
     return self.baseHtml or BaseHtml()
+)
