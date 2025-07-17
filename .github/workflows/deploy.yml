@@ -38,6 +38,8 @@ jobs:
       - name: Generate Static Files
         run: |
           python freeze.py
+          mkdir build
+          mv ./static ./build
 
       # If your static files are in a folder (e.g., 'static'), deploy that folder.
       - name: Deploy to GitHub Pages
