@@ -1,11 +1,15 @@
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return render_template('index.html')
+  return f"""
+    <div id='home-page'></div>
+  """
 
 @app.route('/about')
 def about():
-  return render_template('about.html')
+  return f"""
+    <div id='about-page'></div>
+  """
