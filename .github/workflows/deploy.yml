@@ -34,7 +34,6 @@ jobs:
       - name: Build static site
         run: |
           python build.py
-          cp ./static/* ./build/.
 
       - name: Generate Static Files
         run: |
