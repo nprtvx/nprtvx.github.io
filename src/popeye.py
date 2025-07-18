@@ -2,15 +2,15 @@ from src.page import Page
 from src.style import Style
 #print('popeye in src after imports')
 css = f"""
-    * {
+    * {{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
-    body {
+    }}
+    body {{
         background-color: #000d;
-    }
-    #popeye {
+    }}
+    #popeye {{
         position: absolute;
         top: 0;
         right: 0;
@@ -19,7 +19,7 @@ css = f"""
         display: flex;
         align-items: center;
         flex-direction: column;
-    }
+    }}
 """
 style = Style(extra_css=css)
 
@@ -39,7 +39,7 @@ body = f"""
 """
 #print(body)
 
-page = Page(title="popeye", body=body, style=style, filename='index.html')
+page = Page(title="home", body=body, style=style, filename='index.html')
 
 page.body += body
 
