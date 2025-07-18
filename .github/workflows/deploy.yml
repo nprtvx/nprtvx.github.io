@@ -35,9 +35,9 @@ jobs:
         run: |
           python build.py
 
-      - name: Generate Static Files
-        run: |
-          python freeze.py
+      #- name: Generate Static Files
+        #run: |
+          #python freeze.py
           #mv ./static ./build
 
       # If your static files are in a folder (e.g., 'static'), deploy that folder.
@@ -45,6 +45,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.nprtvx_token }}
-          publish_dir: ./build
-          #publish_dir: ./static     # Change to your output directory
+          #publish_dir: ./build
+          publish_dir: ./static     # Change to your output directory
           # cname: example.com
