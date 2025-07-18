@@ -7,10 +7,10 @@
 
 number: int = 8
 
-def changeNumber(number: int) -> int:
-    if number:
-        global number as numb
-        numb = number
+def changeNumber(numb: int) -> int:
+    if numb:
+        global number
+        number = numb
     return
 
 print(number)
