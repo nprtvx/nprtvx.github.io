@@ -7,7 +7,7 @@
 
 number: int = 8
 
-def changeNumber(numb: int) -> int:
+def change_number(numb: int) -> int:
     if numb:
         global number
         number = numb
