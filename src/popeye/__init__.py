@@ -145,7 +145,7 @@ style = Style(extra_css=css)
 
 vr0000m = " vroooom ".upper();
 
-body = "<div id='popeye'></div>"
+#body = "<div id='popeye'></div>"
 
 page = Page(title="Home", body=body, style=style, filename='index.html')
 
@@ -182,7 +182,7 @@ page.body += f"""
 			</video>
 
 			<nav class="navbar">
-				<img src="../IMG_7592.PNG" class="logo">
+				<img src="https://images.pexels.com/photos/248539/pexels-photo-248539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="logo">
 				<ul class="menu">
 					<li><a href="#">HOME</a></li>
 					<li><a href="#">DASHBOARD</a></li>
@@ -198,6 +198,6 @@ page.body += f"""
 		</div>
   """
 
-page.body += f"""<script>{''.join(scripts)}</script>"""
+#page.body += f"""<script>{''.join(scripts)}</script>"""
 
 # eof
