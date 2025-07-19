@@ -18,26 +18,18 @@ class Page:
             f'<a href="{href}">{text}</a>' for text, href in self.links
         )
 
-        self.head_html = f"""
-		<head>
-			<meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>{title +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
-		</head>
-		<style>{self.style.render()}</style>
-        """
-        self.body_html = f"""
-		<body>
-            <div id="popeye"></div>
-        </body>
-	"""
-
-        return f"""
-		<!DOCTYPE html>
-		<html lang="en">
-			{self.head_html}
-			{self.body_html}
-		</html>
+        head_html = [
+		"<meta charset='UTF-8'>",
+		"<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+  		"<title>{title +' | '+ self.title if self.title != 'Home' else str('neon monkey'.title())}</title>",
+   		"<style>{self.style.render()}</style>"
+  	]
+   
+        return f"""<!DOCTYPE html>
+	<html lang="en">
+		<head>{head_html}</head>
+  		<body>{self.body}</body>
+	</html>
 	"""
 
     def write(self, directory="templates"):
