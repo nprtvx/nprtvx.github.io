@@ -27,7 +27,7 @@ class Page:
    
         return f"""<!DOCTYPE html>
 	<html lang="en">
-		<head>{head_html}</head>
+		<head>{''.join(head_html)}</head>
   		<body>{self.body}</body>
 	</html>
 	"""
