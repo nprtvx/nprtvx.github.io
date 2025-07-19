@@ -30,7 +30,7 @@ body = "<div id='popeye'></div>"
 page = Page(title="Home", body=body, style=style, filename='index.html')
 
 def create_element(tag: str, id: str):
-	return f"const {id} = document.createElement({tag});{id}.setAttribute('id', {id});"
+	return f"const {id} = document.createElement('{tag}');{id}.setAttribute('id', '{id}');"
 
 scripts = [
 	"const popeye = document.getElementById('popeye');",
