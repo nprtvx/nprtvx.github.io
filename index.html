@@ -33,8 +33,29 @@
 		height: 100px;
 		border-radius: 50vmin;
 	}
+ 	#login, #signup {
+		width: 400px;
+  		height: 400px;
+    		display: flex;
+      		align-items: center;
+		justify-content: center;
+  	}
+   	#loginlink, #signuplink {
+		text-decoration: none;
+  		color: #8926;
+    		background: transparent;
+      		border: 1px solid;
+		border-radius: 1em;
+  		padding: 1em;
+    		margin: 1em;
+    	}
+     	#greetinglinks {
+      		display: flex;
+		align-items: center;
+  		justify-content: space-evenly;
+    	}
 
 	</style></head>
-  		<body><div id='popeye'></div><script>const popeye = document.getElementById('popeye');const greeting = document.createElement('div');greeting.setAttribute('id', 'greeting');const login = document.createElement('a');login.setAttribute('id', 'login');const signup = document.createElement('a');signup.setAttribute('id', 'signup');greeting.append(login);greeting.append(signup);popeye.append(greeting);////popeye.appendChild(vr00m);</script></body>
+  		<body><div id='popeye'></div><script>const popeye = document.getElementById('popeye');const greeting = document.createElement('div');greeting.setAttribute('id', 'greeting');const loginlink = document.createElement('a');loginlink.setAttribute('id', 'loginlink');const signuplink = document.createElement('a');signuplink.setAttribute('id', 'signuplink');const login = document.createElement('form');login.setAttribute('id', 'login');const signup = document.createElement('form');signup.setAttribute('id', 'signup');const greetinglinks = document.createElement('div');greetinglinks.setAttribute('id', 'greetinglinks');greeting.textContent = 'welcome';loginlink.textContent = 'login';signuplink.textContent = 'sign up';loginlink.setAttribute('href', '#login';signuplink.setAttribute('href', '#signup';greetinglinks.append(login);greetinglinks.append(signup);greeting.append(greetinglinks);popeye.append(greeting);loginlink.addEventListener('click', () => {{ popeye.remove(greeting); popeye.append(login); }});signuplink.addEventListener('click', () => {{ popeye.remove(greeting); popeye.append(signup); }});////popeye.appendChild(vr00m);</script></body>
 	</html>
 	
