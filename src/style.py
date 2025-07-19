@@ -16,7 +16,7 @@ class Style:
 		}}
 
 		body {{
-				background-color: {self.body_bg};
+				background-img: linear-gradient({self.body_bg}, {self.body_bg});
 				color: {self.text_color};
 				overflow: hidden;
 		}}
