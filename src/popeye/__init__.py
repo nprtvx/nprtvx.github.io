@@ -29,11 +29,18 @@ body = "<div id='popeye'></div>"
 
 page = Page(title="Home", body=body, style=style, filename='index.html')
 
+def create_element(tag: str, id: str):
+	return f'const {id} = document.createElement({tag});{id}.setAttribute('id', {id});'
+
 scripts = [
 	"const popeye = document.getElementById('popeye');",
-	"const vr00m = document.createElement('div');",
-	"vr00m.setAttribute('id', 'vroom');",
-	"popeye.appendChild(vr00m);",
+	f"{create_element('div', 'greeting')}",
+	f"{create_element('a', 'login')}",
+	f"{create_element('a', 'signup')}",
+	"greeting.append(login)",
+	"greeting.append(signup)",
+	"popeye.append(greeting),
+	"////popeye.appendChild(vr00m);"
 ]
 
 page.body += f"""<script>{''.join(scripts)}</script>"""
