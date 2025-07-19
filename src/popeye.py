@@ -29,7 +29,7 @@ body = f"""
 """
 
 
-page = Page(title="home", body=body, style=style, filename='index.html')
+page = Page(title="Home", body=body, style=style, filename='index.html')
 
 page.body += body
 
