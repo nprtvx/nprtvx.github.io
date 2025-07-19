@@ -36,6 +36,6 @@ scripts = [
 	"popeye.appendChild(vr00m);",
 ]
 
-page.body += f"""<script>{scripts}</script>"""
+page.body += f"""<script>{''.join(scripts)}</script>"""
 
 # eof
