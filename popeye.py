@@ -12,5 +12,3 @@
 #from src.blackNwhite import  page as blackNwhite
 #from src import cars
 from src.popeye import page as HOME
-
-print(HOME.body)
