@@ -1,6 +1,7 @@
 from src.page import Page
 from src.style import Style
-#print('popeye in src after imports')
+
+
 css = f"""
     * {{
         margin: 0;
@@ -24,7 +25,6 @@ css = f"""
 style = Style(extra_css=css)
 
 vr0000m = " vroooom ".capitalize();
-#print('popeye page ', vr0000m)
 
 body = f"""
     <div id="vroom">{vr0000m}</div>
@@ -37,10 +37,9 @@ body = f"""
 	}}
     </style>
 """
-#print(body)
+
 
 page = Page(title="home", body=body, style=style, filename='index.html')
 
 page.body += body
 
-print(page.body)

@@ -34,11 +34,8 @@ if __name__ == "__main__":
         """page logo defaults to None. Change path argument to update/replace"""
         if not page.logo:
             page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
-        print("is this not printing - ", page.body)
-        """write page"""
+        #print("is this not printing - ", page.body)
         page.write()
-        print("wrote home page")
-    print("templates")
     copy_templates()
     copy_assets()
     print(f"Static site generated in {OUTPUT_DIR}")
