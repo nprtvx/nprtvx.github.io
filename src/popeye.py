@@ -32,7 +32,7 @@ page = Page(title="Home", body=body, style=style, filename='index.html')
 scripts = [
 	"const popeye = document.getElementById('popeye');",
 	"const vr00m = document.createElement('div');",
-	"vr00m.setattribute('id', 'vroom');",
+	"vr00m.setAttribute('id', 'vroom');",
 	"popeye.appendChild(vr00m);",
 ]
 
