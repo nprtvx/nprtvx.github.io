@@ -22,6 +22,7 @@ class Page:
 		"<meta charset='UTF-8'>",
 		"<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
   		f"<title>{title +' | '+ self.title if self.title != 'Home' else str('neon monkey'.title())}</title>",
+		"<link rel='icon' type='image/x-icon' href='/assets/favicon.ico'>",
    		f"<style>{self.style.render()}</style>"
   	]
 
