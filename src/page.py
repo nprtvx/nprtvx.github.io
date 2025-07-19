@@ -24,6 +24,7 @@ class Page:
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>{title +" | "+ self.title if self.title != "Home" else str('neon monkey'.title())}</title>
 		</head>
+		<style>{self.style.render()}</style>
         """
         self.body_html = f"""
 		<body>
