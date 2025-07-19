@@ -1,6 +1,6 @@
 from src.page import Page
 from src.style import Style
-from src.cars import image_elements
+from src.cars import gallery
 
 css = f"""
 	#popeye {{
@@ -197,7 +197,7 @@ page.body += f"""
 			</div>
 		</div>
   <div>
-  {''.join(image_elements)}
+  {''.join(gallery.image_elements)}
   </div>
   """
 
