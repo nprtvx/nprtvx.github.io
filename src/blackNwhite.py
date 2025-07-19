@@ -7,6 +7,6 @@ body = """
 style = Style()
 
 # Page object for the Popeye page
-page = Page( title="Black & White", body=body, links=None, style=style, 
+blackNwhite = Page( title="Black & White", body=body, links=None, style=style, 
     filename="blackNwhite/index.html"
 )
