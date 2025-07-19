@@ -19,7 +19,9 @@ body = """
 """
 
 css = """
-
+body {{
+color: #000d;
+}}
 """
 style = Style()
 
