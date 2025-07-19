@@ -24,7 +24,7 @@ class Page:
   		f"<title>{title +' | '+ self.title if self.title != 'Home' else str('neon monkey'.title())}</title>",
    		f"<style>{self.style.render()}</style>"
   	]
-   
+
         return f"""<!DOCTYPE html>
 	<html lang="en">
 		<head>{''.join(head_html)}</head>
@@ -33,10 +33,10 @@ class Page:
 	"""
 
     def write(self, directory="templates"):
-        print('''writing files''')
+        #print('''writing files''')
         path = os.path.join(directory, self.filename)
-        print(path)
+        #print(path)
         os.makedirs(os.path.dirname(path), exist_ok=True)  # Ensure parent directories exist
         with open(path, "w", encoding="utf-8") as f:
             f.write(self.render())
-            print(f"Wrote {path}")
+            #print(f"Wrote {path}")

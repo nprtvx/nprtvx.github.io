@@ -11,6 +11,7 @@ css = f"""
 		left: 0;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		flex-direction: column;
 	}}
 	#vroom {{
@@ -24,13 +25,17 @@ style = Style(extra_css=css)
 
 vr0000m = " vroooom ".upper();
 
-body = f"""
-    <div id="vroom">{vr0000m}</div>
-"""
-
+body = "<div id='popeye'></div>"
 
 page = Page(title="Home", body=body, style=style, filename='index.html')
 
+scripts = [
+	"const popeye = document.getElementById('popeye');",
+	"const vr00m = document.createElement('div');",
+	"vr00m.setattribute('id', 'vroom');",
+	"popeye.appendChild(vr00m);",
+]
 
+page.body += f"""<script>{scripts}</script>"""
 
 # eof
