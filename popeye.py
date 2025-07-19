@@ -15,3 +15,7 @@
 from src import popeye
 
 HOME = popeye.page
+
+from src.blackNwhite import bnw
+
+blackNwhite = bnw.page
