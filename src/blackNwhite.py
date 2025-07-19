@@ -19,8 +19,12 @@ body = """
 """
 
 css = """
-body {{
+.bnw {{
 color: #000d;
+}}
+.bnw h1 {{
+font-size: 48px;
+
 }}
 """
 style = Style()
