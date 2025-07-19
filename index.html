@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 	<html lang="en">
-		<head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>{title +' | '+ self.title if self.title != 'Home' else str('neon monkey'.title())}</title><style>{self.style.render()}</style></head>
+		<head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Neon Monkey</title><style>
+            
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+				background-color: #000000;
+				color: #8926;
+				overflow: hidden;
+		}
+
+	
+            
+	#popeye {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	#vroom {
+		background-color: #8926;
+		width: 100px;
+		height: 100px;
+		border-radius: 50vmin;
+	}
+
+	</style></head>
   		<body>
     <div id="vroom"> VROOOOM </div>
 </body>
