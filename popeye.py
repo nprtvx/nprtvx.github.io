@@ -14,4 +14,4 @@
 #from src.popeye import page as HOME
 from src import popeye
 
-Home = popeye.page
+HOME = popeye.page
