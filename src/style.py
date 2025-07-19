@@ -23,7 +23,7 @@ class Style:
 
 	"""
         return f"""
-            {print(self.defailt_style)}
+            {print(self.default_style)}
             {print(self.extra_css)}
             {self.default_style}
             {self.extra_css}
