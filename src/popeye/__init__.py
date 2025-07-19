@@ -39,7 +39,7 @@ scripts = [
 	f"{create_element('a', 'signup')}",
 	"greeting.append(login)",
 	"greeting.append(signup)",
-	"popeye.append(greeting),
+	"popeye.append(greeting)",
 	"////popeye.appendChild(vr00m);"
 ]
 
