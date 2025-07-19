@@ -41,6 +41,13 @@ css = f"""
 		align-items: center;
   		justify-content: space-evenly;
     	}}
+     	#greeting {{
+      		position: absolute;
+		top: 26px;
+  		left: 26px;
+      		font-size: 4rem;
+		color: #008a;
+  	}}
 """
 style = Style(extra_css=css)
 
@@ -55,7 +62,7 @@ def create_element(tag: str, id: str):
 
 scripts = [
 	"const popeye = document.getElementById('popeye');",
-	f"{create_element('div', 'greeting')}",
+	f"{create_element('h2', 'greeting')}",
 	f"{create_element('a', 'loginlink')}",
 	f"{create_element('a', 'signuplink')}",
 	f"{create_element('form', 'login')}",
@@ -68,10 +75,10 @@ scripts = [
 	"signuplink.setAttribute('href', '#signup');",
 	"greetinglinks.append(loginlink);",
 	"greetinglinks.append(signuplink);",
-	"greeting.append(greetinglinks);",
 	"popeye.append(greeting);",
-	"loginlink.addEventListener('click', () => {{ popeye.remove(greeting); popeye.append(login); }});",
-	"signuplink.addEventListener('click', () => {{ popeye.remove(greeting); popeye.append(signup); }});",
+	"popeye.append(greetinglinks);",
+	"loginlink.addEventListener('click', () => {{ popeye.remove(greeting, greetinglinks); popeye.append(login); }});",
+	"signuplink.addEventListener('click', () => {{ popeye.remove(greeting, greetinglinks); popeye.append(signup); }});",
 	"////popeye.appendChild(vr00m);"
 ]
 
