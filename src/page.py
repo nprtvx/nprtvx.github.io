@@ -21,8 +21,8 @@ class Page:
         head_html = [
 		"<meta charset='UTF-8'>",
 		"<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
-  		"<title>{title +' | '+ self.title if self.title != 'Home' else str('neon monkey'.title())}</title>",
-   		"<style>{self.style.render()}</style>"
+  		f"<title>{title +' | '+ self.title if self.title != 'Home' else str('neon monkey'.title())}</title>",
+   		f"<style>{self.style.render()}</style>"
   	]
    
         return f"""<!DOCTYPE html>
