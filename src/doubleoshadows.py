@@ -10,9 +10,10 @@ html = f"""
 <div class='{doubleO}-div' id='{doubleO}-8'></div>
 """
 
-script = f"""
+script = f"""<script>
 const doubleO = document.getElementById('{doubleO}-8');
 doubleO.textContent = {doubleO};
+</script>
 """
 
 css = f"""
