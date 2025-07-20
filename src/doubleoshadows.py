@@ -11,9 +11,9 @@ html = f"""
 """
 
 script = f"""<script>
-const doubleO = document.getElementById('{doubleO}-8');
-doubleO.textContent = ` {doubleO} `;
-document.body.append(doubleO*3)
+const {doubleO} = document.getElementById('{doubleO}-8');
+{doubleO}.textContent = ` {doubleO} `;
+document.body.append({doubleO}*3)
 </script>
 """
 
