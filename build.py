@@ -33,7 +33,7 @@ if __name__ == "__main__":
     for page in pages:
         """page logo defaults to None. Change path argument to update/replace"""
         if not page.logo:
-            page.logo = Path('assets/logo.png') if page.title == "Home" else Path('../assets/logo.png')
+            page.logo = Path('assets/logo.png')
         #print("is this not printing - ", page.body)
         page.write()
     copy_templates()
