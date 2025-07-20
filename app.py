@@ -13,7 +13,6 @@ async def read_index():
     with open("index.html", "r") as file:
         filist = file.readlines()
         file.close()
-    return filist
+    await filist
 
-filist = await read_index()
-
+filist =  read_index()
