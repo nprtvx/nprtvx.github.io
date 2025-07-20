@@ -14,7 +14,7 @@ const doubleO = document.getElementById('{doubleO}-8');
 doubleO.textContent = {doubleO};
 """
 
-style = f"""
+css = f"""
 .{doubleO}-div {{
 color: #fff8;
 background-color: #000d;
@@ -33,6 +33,8 @@ text-shadow: 0 26px #fff;
 }}
 }}
 """
+
+style = Style(extra_css=css)
 
 def get_doubleOshadow(html, style, script):
     page = Page(title=f'{doubleO}', body=html+script, style=style, filename="doubleOshadow/index.html")
