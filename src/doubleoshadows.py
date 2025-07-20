@@ -39,7 +39,7 @@ def get_doubleOshadow(html, style, script):
     return page
 
 
-
+doubleOshadow = get_doubleOshadow(html,style, script)
 
 # eof
 # 
