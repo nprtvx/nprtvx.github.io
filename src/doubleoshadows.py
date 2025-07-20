@@ -5,7 +5,7 @@ letterO = 'o'
 doubleO = letterO*2
 
 html = f"""
-<div class='{doubleO}-div}'></div>
+<div class='{doubleO}-div'></div>
 """
 
 script = f"""
