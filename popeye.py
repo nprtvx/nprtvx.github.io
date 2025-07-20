@@ -21,4 +21,5 @@ from src.blackNwhite import bnw
 blackNwhite = bnw
 
 from src import doubleoshadows
+print(doubleoshadows)
 doubleOshadow = doubleoshadows.doubleOshadow
