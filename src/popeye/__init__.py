@@ -177,7 +177,7 @@ scripts = [
 page.body += f"""
 <div class="hero">
 
-			<video autoplay loop muted plays-inline class="back-video">
+			<video autoplay loop muted playsinline class="back-video">
 				<source src="https://videos.pexels.com/video-files/855433/855433-hd_1864_1048_25fps.mp4" type="video/mp4">
 			</video>
 
