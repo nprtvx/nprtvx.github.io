@@ -19,3 +19,6 @@ HOME = popeye.page
 from src.blackNwhite import bnw
 
 blackNwhite = bnw
+
+from src import doubleoshadows
+doubleOshadow = doubleoshadows.doubleOshadow
