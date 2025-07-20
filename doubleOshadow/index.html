@@ -19,9 +19,13 @@
 .oo-div {
 color: #fff8;
 background-color: #000d;
-font-size: 32px;
+font-size: 2rem;
 animation: shadow-blink 2s infinite;
-padding: 2rem;
+position: absolute;
+display: center;
+align-items: center;
+justify-content: center;
+font-family: system-ui;
 }
 
 @keyframes shadow-blink {
@@ -41,7 +45,6 @@ text-shadow: 0 26px #fff;
 <script>
 const oo = document.getElementById('oo-8');
 oo.textContent = ` oo `;
-document.body.append(oo*3)
 </script>
 </body>
 	</html>
