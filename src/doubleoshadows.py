@@ -25,7 +25,7 @@ animation: shadow-blink 2s infinite;
 position: absolute;
 top: 126px;
 left: 87px;
-padding: 4rem;
+padding: 4rem 8rem;
 display: center;
 align-items: center;
 justify-content: center;
