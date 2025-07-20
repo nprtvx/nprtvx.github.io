@@ -5,10 +5,12 @@ letterO = 'o'
 doubleO = letterO*2
 
 html = f"""
-<div class='{doubleO}-div'></div>
+<div class='{doubleO}-div' id='{doubleO}-8'></div>
 """
 
 script = f"""
+const doubleO = document.getElementById('{doubleO}-8');
+doubleO.textContent = {doubleO};
 """
 
 style = f"""
