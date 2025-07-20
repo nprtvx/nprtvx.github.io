@@ -18,7 +18,7 @@ const {doubleO} = document.getElementById('{doubleO}-8');
 
 css = f"""
 .{doubleO}-div {{
-color: #fff8;
+color: transparent;
 background-color: #000d;
 font-size: 48vmin;
 font-weight: 800;
