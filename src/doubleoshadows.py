@@ -1,6 +1,7 @@
 
 
 from src.page import Page
+from src.style import Style
 
 letterO = 'o'
 doubleO = letterO*2
