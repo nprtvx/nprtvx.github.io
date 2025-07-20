@@ -16,13 +16,10 @@ from src import popeye
 
 HOME = popeye.page
 
-from src.blackNwhite import bnw
+from src.blackNwhite import bnw as blackNwhite
 
-blackNwhite = bnw
+from src.doubleoshadows import  doubleOshadow
 
-from src import doubleoshadows as dos
-
-doubleOshadow = dos.get_doubleOshadow()
 
 # eof
 #
