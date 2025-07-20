@@ -22,7 +22,7 @@ blackNwhite = bnw
 
 from src import doubleoshadows as dos
 
-doubleOshadow = dos.get_doubleOshadow(dos.html, dos.style, dos.script)
+doubleOshadow = dos.get_doubleOshadow()
 
 # eof
 #
