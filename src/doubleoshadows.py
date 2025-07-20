@@ -35,7 +35,7 @@ text-shadow: 0 26px #fff;
 """
 
 def get_doubleOshadow(html, style, script):
-    page = Page(body=html+script, style=style, filename="doubleOshadow/index.html")
+    page = Page(title=f'{doubleO}', body=html+script, style=style, filename="doubleOshadow/index.html")
 
 if __name__=="__main__":
     doubleOshadow = get_doubleOshadow()
