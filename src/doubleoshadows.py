@@ -20,7 +20,7 @@ css = f"""
 .{doubleO}-div {{
 color: #fff8;
 background-color: #000d;
-font-size: 32px;
+font-size: 26vmin;
 animation: shadow-blink 2s infinite;
 position: absolute;
 top: 10vmin;
