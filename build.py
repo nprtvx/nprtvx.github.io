@@ -28,7 +28,7 @@ def copy_assets():
 
 if __name__ == "__main__":
     """create a list of pages"""
-    pages = [popeye.HOME, popeye.blackNwhite, doubleOshadow]
+    pages = [popeye.HOME, popeye.blackNwhite, popeye.doubleOshadow]
     """loop over each page and write them"""
     for page in pages:
         """page logo defaults to None. Change path argument to update/replace"""
