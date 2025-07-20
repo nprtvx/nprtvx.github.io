@@ -38,7 +38,7 @@ def get_doubleOshadow(html, style, script):
 
 if __name__=="__main__":
     doubleOshadow = get_doubleOshadow()
-    return doubleOshadow
+    print(doubleOshadow)
 
 
 
