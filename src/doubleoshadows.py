@@ -1,5 +1,6 @@
 
 
+from src.page import Page
 
 letterO = 'o'
 doubleO = letterO*2
