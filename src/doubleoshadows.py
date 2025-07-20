@@ -13,7 +13,6 @@ html = f"""
 script = f"""<script>
 const {doubleO} = document.getElementById('{doubleO}-8');
 {doubleO}.textContent = ` {doubleO} `;
-document.body.append({doubleO}*3)
 </script>
 """
 
@@ -21,9 +20,13 @@ css = f"""
 .{doubleO}-div {{
 color: #fff8;
 background-color: #000d;
-font-size: 32px;
+font-size: 2rem;
 animation: shadow-blink 2s infinite;
-padding: 2rem;
+position: absolute;
+display: center;
+align-items: center;
+justify-content: center;
+font-family: system-ui;
 }}
 
 @keyframes shadow-blink {{
