@@ -12,7 +12,7 @@ html = f"""
 
 script = f"""<script>
 const doubleO = document.getElementById('{doubleO}-8');
-doubleO.textContent = {doubleO};
+doubleO.textContent = `${{ {doubleO} }}`;
 </script>
 """
 
