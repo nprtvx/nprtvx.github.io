@@ -20,8 +20,9 @@ from src.blackNwhite import bnw
 
 blackNwhite = bnw
 
-from src.doubleoshadows import * as doubleOshadow
+from src import doubleoshadows as dos
 
+doubleOshadow = dos.get_doubleOshadow(dos.html, dos.style, dos.script)
 
 # eof
 #
