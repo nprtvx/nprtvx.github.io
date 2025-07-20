@@ -20,9 +20,11 @@ css = f"""
 .{doubleO}-div {{
 color: #fff8;
 background-color: #000d;
-font-size: 2rem;
+font-size: 32px;
 animation: shadow-blink 2s infinite;
 position: absolute;
+top: 32px;
+left: 32px;
 display: center;
 align-items: center;
 justify-content: center;
