@@ -20,9 +20,7 @@ from src.blackNwhite import bnw
 
 blackNwhite = bnw
 
-from src.doubleoshadows import doubleOshadow
-
-doubleOshadow
+from src.doubleoshadows import * as doubleOshadow
 
 
 # eof
