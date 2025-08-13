@@ -9,8 +9,8 @@ body = f"""
 <div class='hero'>
 <h2>welcome</h2>
 <ul>
-<li><a href='#'></a></li>
-<li><a href='#'></a></li>
+<li><a href='/'>home</a></li>
+<li><a href='/dOs'>OO</a></li>
 <li><a href='#'></a></li>
 <li><a href='#'></a></li>
 </ul>
@@ -25,6 +25,13 @@ color: #000;
 .bnw h1 {{
 font-size: 48px;
 
+}}
+.hero {{
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 26px;
+backgound: #8364;
 }}
 """
 style = Style(extra_css=css)
