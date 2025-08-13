@@ -1,10 +1,13 @@
 import requests
 
 username = 'popeye'
-response = requests.post(f'https:////nprtvx.github.io//src//account//users//{username}',
+response = requests.post(f'https:////nprtvx.github.io//account//users//{username}',
     data={"text": username})
 if response.status_code == 200:
     print('success')
 else:
     print('enter username')
 print(response.text)
+
+responseGet = requests.get(f'https:////nprtvx.github.io//account//users//{username}')
+print(responseGet.text)
