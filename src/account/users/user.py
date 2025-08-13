@@ -1,3 +1,4 @@
+"""
 import requests
 
 username = 'popeye'
@@ -11,3 +12,4 @@ print(response.text)
 
 responseGet = requests.get(f'https:////nprtvx.github.io//account//users//{username}')
 print(responseGet.text)
+"""
