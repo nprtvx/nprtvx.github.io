@@ -10,7 +10,7 @@ body = f"""
 <h2>welcome</h2>
 <ul>
 <li><a href='/'>home</a></li>
-<li><a href='/dOs'>OO</a></li>
+<li><a href='/doubleOshadow'>OO</a></li>
 <li><a href='#'></a></li>
 <li><a href='#'></a></li>
 </ul>
