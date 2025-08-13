@@ -20,14 +20,14 @@ body = """
 
 css = """
 .bnw {{
-color: #000d;
+color: #000;
 }}
 .bnw h1 {{
 font-size: 48px;
 
 }}
 """
-style = Style()
+style = Style(extra_css=css)
 
 # Page object for the Popeye page
 blackNwhite = Page( title="Black & White", body=body, links=None, style=style, 
