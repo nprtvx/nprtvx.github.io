@@ -3,7 +3,7 @@ from src.style import Style
 
 
 
-body = """
+body = f"""
 <div class='bnw'>
 <h1>black & white</h1>
 <div class='hero'>
@@ -18,7 +18,7 @@ body = """
 </div>
 """
 
-css = """
+css = f"""
 .bnw {{
 color: #000;
 }}
