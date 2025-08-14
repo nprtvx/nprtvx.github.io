@@ -212,9 +212,13 @@ page.body += f"""
 </div>
 <div class='about-us'>
 <h2>about</h2>
-<p>about the page and all
+<p>about the page and all</p>
 </div>
 """
 
 
+# each div is a fullscreen absolute element
+class NMElement:
+	def __init__(self):
+		pass
 # eof
