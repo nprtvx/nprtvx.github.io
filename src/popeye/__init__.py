@@ -174,7 +174,8 @@ scripts = [
 	"////popeye.appendChild(vr00m);"
 ]
 
-page.body += f"""
+#page.body += f"""
+"""
 <div class="hero">
 
 			<video autoplay loop muted playsinline class="back-video">
@@ -202,5 +203,18 @@ page.body += f"""
   """
 
 #page.body += f"""<script>{''.join(scripts)}</script>"""
+
+page.body += f"""
+# hero landing
+<div class='landing'>
+<h2>one liner like a quote or something</h2>
+<button>something funny</button>
+</div>
+<div class='about-us'>
+<h2>about</h2>
+<p>about the page and all
+</div>
+"""
+
 
 # eof
