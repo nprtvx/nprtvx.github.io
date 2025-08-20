@@ -230,7 +230,7 @@ scripts = [
   """
 home, about, contact = 'home', 'about', 'contact'
 #page.body += f"""<script>{''.join(scripts)}</script>"""
-menuitems = (str(home), str(about), str(contact))
+menu_items = (str(home), str(about), str(contact))
 def get_menu(items):
 	for i in len(items):
 		if i != 0:
