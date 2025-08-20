@@ -1,7 +1,6 @@
 from typing import Tuple
 from src.page import Page
 from src.style import Style
-from src.cars import gallery
 
 css = f"""
 .App-NM {{
