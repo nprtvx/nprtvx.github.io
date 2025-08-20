@@ -1,3 +1,4 @@
+from typing import Tuple
 from src.page import Page
 from src.style import Style
 from src.cars import gallery
@@ -230,6 +231,13 @@ scripts = [
 home, about, contact = 'home', 'about', 'contact'
 #page.body += f"""<script>{''.join(scripts)}</script>"""
 menuitems = (str(home), str(about), str(contact))
+def get_menu_items(items):
+	for i in len(items):
+		if i != 0:
+			items[i] = f"""<li><a href='//items[i]'>items[i]</a></li>"""
+		else:
+			items[i] = f"""<li><a href='//'>items[i]</a></li>"""
+	return items
 page.body += f"""
 # create an absolute element which acts as a full screen
 <div class='App-NEON-MONKEY'>
@@ -239,8 +247,7 @@ page.body += f"""
 <img src='#' alt='neon monkey' //>
 </div>
 <ul>
-{for i in range(len(menu_items)):}
-	<li><a href='//{menu_items[i] if i != 0 else None}'>{menu_items[i]}</a></li>
+{get_menu_items()}
 </ul>
 </div>
 </div>
