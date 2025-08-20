@@ -43,17 +43,24 @@ align-items: center;
 justify-content: space-evenly;
 box-shadow: 0 0 0 26px inset;
 }
+#menu-item {
+list-style: none;
+}
+#menu-item a {
+text-decoration: none;
+color: 
+}
 
 	</style></head>
   		<body>
-# create an absolute element which acts as a full screen
-<div class='App-NEON-MONKEY'>
+<!-- create an absolute element which acts as a full screen -->
+<div class='App-NM'>
 <div class='Nav-NM'>
 <div>
 <!-- branding -->
 <img src='#' alt='neon monkey' //>
 </div>
-<ul>
+<ul id='menu-items'>
 <li><a href='/'>HOME</a></li>
 <li><a href='/about'>ABOUT</a></li>
 <li><a href='/contact'>CONTACT</a></li>
