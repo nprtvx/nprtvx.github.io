@@ -8,7 +8,9 @@ css = f"""
 position: absolute;
 top: 0;
 left: 0;
-color: #1192CC87;
+right: 0;
+bottom: 0;
+color: #abcd;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -24,19 +26,19 @@ align-items: center;
 justify-content: space-between;
 background-color: #0000;
 }}
-.Nav-NM div {{
+#brand, #menu-items {{
 width: 50%;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
 box-shadow: 0 0 0 26px inset;
 }}
-#menu-item {{
+#menu-items {{
 list-style: none;
 }}
-#menu-item a {{
+#menu-items a {{
 text-decoration: none;
-color: 
+color: #abcd;
 }}
 """
 # 	#popeye {{
@@ -186,65 +188,62 @@ page = Page(title="Home", body="", style=style, filename='index.html')
 def create_element(tag: str, id: str):
 	return f"const {id} = document.createElement('{tag}');{id}.setAttribute('id', '{id}');"
 
-scripts = [
-	"const popeye = document.getElementById('popeye');",
-	f"{create_element('h2', 'greeting')}",
-	f"{create_element('a', 'loginlink')}",
-	f"{create_element('a', 'signuplink')}",
-	f"{create_element('form', 'login')}",
-	f"{create_element('form', 'signup')}",
-	f"{create_element('div', 'greetinglinks')}",
-	"greeting.textContent = 'welcome';",
-	"loginlink.textContent = 'login';",
-	"signuplink.textContent = 'sign up';",
-	"loginlink.setAttribute('href', '#login');",
-	"signuplink.setAttribute('href', '#signup');",
-	"greetinglinks.append(loginlink);",
-	"greetinglinks.append(signuplink);",
-	"popeye.append(greeting);",
-	"popeye.append(greetinglinks);",
-	"loginlink.addEventListener('click', () => {{ popeye.remove(greeting, greetinglinks); popeye.append(login); }});",
-	"signuplink.addEventListener('click', () => {{ popeye.remove(greeting, greetinglinks); popeye.append(signup); }});",
-	"////popeye.appendChild(vr00m);"
-]
+# scripts = [
+# 	"const popeye = document.getElementById('popeye');",
+# 	f"{create_element('h2', 'greeting')}",
+# 	f"{create_element('a', 'loginlink')}",
+# 	f"{create_element('a', 'signuplink')}",
+# 	f"{create_element('form', 'login')}",
+# 	f"{create_element('form', 'signup')}",
+# 	f"{create_element('div', 'greetinglinks')}",
+# 	"greeting.textContent = 'welcome';",
+# 	"loginlink.textContent = 'login';",
+# 	"signuplink.textContent = 'sign up';",
+# 	"loginlink.setAttribute('href', '#login');",
+# 	"signuplink.setAttribute('href', '#signup');",
+# 	"greetinglinks.append(loginlink);",
+# 	"greetinglinks.append(signuplink);",
+# 	"popeye.append(greeting);",
+# 	"popeye.append(greetinglinks);",
+# 	"loginlink.addEventListener('click', () => {{ popeye.remove(greeting, greetinglinks); popeye.append(login); }});",
+# 	"signuplink.addEventListener('click', () => {{ popeye.remove(greeting, greetinglinks); popeye.append(signup); }});",
+# 	"////popeye.appendChild(vr00m);"
+# ]
 
 #page.body += f"""
-"""
-<div class="hero">
+# <div class="hero">
 
-			<video autoplay loop muted playsinline class="back-video">
-				<source src="https://videos.pexels.com/video-files/855433/855433-hd_1864_1048_25fps.mp4" type="video/mp4">
-			</video>
+# 			<video autoplay loop muted playsinline class="back-video">
+# 				<source src="https://videos.pexels.com/video-files/855433/855433-hd_1864_1048_25fps.mp4" type="video/mp4">
+# 			</video>
 
-			<nav class="navbar">
-				<img src="https://images.pexels.com/photos/248539/pexels-photo-248539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="logo">
-				<ul class="menu">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">DASHBOARD</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
-			</nav>
+# 			<nav class="navbar">
+# 				<img src="https://images.pexels.com/photos/248539/pexels-photo-248539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="logo">
+# 				<ul class="menu">
+# 					<li><a href="#">HOME</a></li>
+# 					<li><a href="#">DASHBOARD</a></li>
+# 					<li><a href="#">ABOUT</a></li>
+# 					<li><a href="#">CONTACT</a></li>
+# 				</ul>
+# 			</nav>
 
-			<div class="content">
-				<h1>coffee shop</h1>
-				<a href="#">explore</a>
-			</div>
-		</div>
-  <div>
-  {''.join(gallery.image_elements)}
-  </div>
-  """
+# 			<div class="content">
+# 				<h1>coffee shop</h1>
+# 				<a href="#">explore</a>
+# 			</div>
+# 		</div>
+#   <div>
+#   {''.join(gallery.image_elements)}
+#   </div>
+#   """
 home, about, contact = 'home', 'about', 'contact'
 #page.body += f"""<script>{''.join(scripts)}</script>"""
 menu_items = {str(home): home, str(about): about, str(contact): contact}
 
 page.body += f"""
-<!-- create an absolute element which acts as a full screen -->
 <div class='App-NM'>
 <div class='Nav-NM'>
-<div>
-<!-- branding -->
+<div id='brand'>
 <img src='#' alt='neon monkey' //>
 </div>
 <ul id='menu-items'>
