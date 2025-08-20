@@ -231,7 +231,7 @@ scripts = [
 home, about, contact = 'home', 'about', 'contact'
 #page.body += f"""<script>{''.join(scripts)}</script>"""
 menuitems = (str(home), str(about), str(contact))
-def get_menu_items(items):
+def get_menu(items):
 	for i in len(items):
 		if i != 0:
 			items[i] = f"""<li><a href='//items[i]'>items[i]</a></li>"""
@@ -247,7 +247,7 @@ page.body += f"""
 <img src='#' alt='neon monkey' //>
 </div>
 <ul>
-{get_menu_items()}
+{get_menu(menu_items)}
 </ul>
 </div>
 </div>
