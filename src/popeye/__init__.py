@@ -10,7 +10,8 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-color: #abcd;
+background-color: #000;
+color: #112692;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -19,8 +20,8 @@ justify-content: space-evenly;
 .Nav-NM {{
 position: absolute;
 top: 0;
-width: 420px;
-height: 187px;
+width: 100%;
+height: 2em;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -38,9 +39,44 @@ list-style: none;
 }}
 #menu-items a {{
 text-decoration: none;
-color: #abcd;
+color: #112692;
+}}
+#nm-ads {{
+width: 26px;
+height: 26px;
+border-radius: 50%;
+box-shadow: 0 0 8px 0 inset;
+margin: 8px;
 }}
 """
+
+home, about, contact = 'home', 'about', 'contact'
+#page.body += f"""<script>{''.join(scripts)}</script>"""
+menu_items = {str(home): home, str(about): about, str(contact): contact}
+
+body = f"""
+<div class='App-NM' id='App-NM'>
+<div class='Nav-NM'>
+<div id='brand'>
+<img src='#' alt='neon monkey' //>
+</div>
+<ul id='menu-items'>
+<li><a href='/'>{menu_items[home].upper()}</a></li>
+<li><a href='/{menu_items[about]}'>{menu_items[about].upper()}</a></li>
+<li><a href='/{menu_items[contact]}'>{menu_items[contact].upper()}</a></li>
+</ul>
+</div>
+<script>
+const nmads = document.createElement('div');
+nmads.setAttribute('id', 'nm-ads');
+const nmapp = document.getElementById('App-NM');
+nmapp.append(nmads*8);
+</script>
+</div>
+"""
+style = Style(extra_css=css)
+page = Page(title="Home", body=body, style=style, filename='index.html')
+
 # 	#popeye {{
 # 		position: absolute;
 # 		top: 0;
@@ -182,11 +218,8 @@ color: #abcd;
 
 # vr0000m = " vroooom ".upper();
 
-style = Style(extra_css=css)
-page = Page(title="Home", body="", style=style, filename='index.html')
-
-def create_element(tag: str, id: str):
-	return f"const {id} = document.createElement('{tag}');{id}.setAttribute('id', '{id}');"
+# def create_element(tag: str, id: str):
+# 	return f"const {id} = document.createElement('{tag}');{id}.setAttribute('id', '{id}');"
 
 # scripts = [
 # 	"const popeye = document.getElementById('popeye');",
@@ -236,24 +269,21 @@ def create_element(tag: str, id: str):
 #   {''.join(gallery.image_elements)}
 #   </div>
 #   """
-home, about, contact = 'home', 'about', 'contact'
-#page.body += f"""<script>{''.join(scripts)}</script>"""
-menu_items = {str(home): home, str(about): about, str(contact): contact}
 
-page.body += f"""
-<div class='App-NM'>
-<div class='Nav-NM'>
-<div id='brand'>
-<img src='#' alt='neon monkey' //>
-</div>
-<ul id='menu-items'>
-<li><a href='/'>{menu_items[home].upper()}</a></li>
-<li><a href='/{menu_items[about]}'>{menu_items[about].upper()}</a></li>
-<li><a href='/{menu_items[contact]}'>{menu_items[contact].upper()}</a></li>
-</ul>
-</div>
-</div>
-"""
+# page.body += f"""
+# <div class='App-NM'>
+# <div class='Nav-NM'>
+# <div id='brand'>
+# <img src='#' alt='neon monkey' //>
+# </div>
+# <ul id='menu-items'>
+# <li><a href='/'>{menu_items[home].upper()}</a></li>
+# <li><a href='/{menu_items[about]}'>{menu_items[about].upper()}</a></li>
+# <li><a href='/{menu_items[contact]}'>{menu_items[contact].upper()}</a></li>
+# </ul>
+# </div>
+# </div>
+# """
 
 
 # each div is a fullscreen absolute element
