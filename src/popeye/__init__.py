@@ -231,14 +231,7 @@ scripts = [
 home, about, contact = 'home', 'about', 'contact'
 #page.body += f"""<script>{''.join(scripts)}</script>"""
 menu_items = {str(home): home, str(about): about, str(contact): contact}
-def get_menu(items):
-	for i in items:
-		if items[i] is not home:
-			items[i] = f"""<li><a href='//{items[i]}'>{items[i].upper()}</a></li>"""
-		else:
-			items[i] = f"""<li><a href='//'>{items[i].upper()}</a></li>"""
-	return (i for i in items)
-menu = get_menu(menu_items)
+
 page.body += f"""
 # create an absolute element which acts as a full screen
 <div class='App-NEON-MONKEY'>
@@ -248,9 +241,9 @@ page.body += f"""
 <img src='#' alt='neon monkey' //>
 </div>
 <ul>
-<li><a href='//'>{menu_items[home].upper()}</a></li>
-<li><a href='//{menu_items[about]}'>{menu_items[about].upper()}</a></li>
-<li><a href='//{menu_items[contact]}'>{menu_items[contact].upper()}</a></li>
+<li><a href='/'>{menu_items[home].upper()}</a></li>
+<li><a href='/{menu_items[about]}'>{menu_items[about].upper()}</a></li>
+<li><a href='/{menu_items[contact]}'>{menu_items[contact].upper()}</a></li>
 </ul>
 </div>
 </div>
