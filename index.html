@@ -20,7 +20,8 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-color: #abcd;
+background-color: #000;
+color: #112692;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -29,8 +30,8 @@ justify-content: space-evenly;
 .Nav-NM {
 position: absolute;
 top: 0;
-width: 420px;
-height: 187px;
+width: 100%;
+height: 2em;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -48,12 +49,19 @@ list-style: none;
 }
 #menu-items a {
 text-decoration: none;
-color: #abcd;
+color: #112692;
+}
+#nm-ads {
+width: 26px;
+height: 26px;
+border-radius: 50%;
+box-shadow: 0 0 8px 0 inset;
+margin: 8px;
 }
 
 	</style></head>
   		<body>
-<div class='App-NM'>
+<div class='App-NM' id='App-NM'>
 <div class='Nav-NM'>
 <div id='brand'>
 <img src='#' alt='neon monkey' //>
@@ -64,6 +72,12 @@ color: #abcd;
 <li><a href='/contact'>CONTACT</a></li>
 </ul>
 </div>
+<script>
+const nmads = document.createElement('div');
+nmads.setAttribute('id', 'nm-ads');
+const nmapp = document.getElementById('App-NM');
+nmapp.append(nmads*8);
+</script>
 </div>
 </body>
 	</html>
