@@ -230,13 +230,13 @@ scripts = [
   """
 home, about, contact = 'home', 'about', 'contact'
 #page.body += f"""<script>{''.join(scripts)}</script>"""
-menu_items = (str(home), str(about), str(contact))
+menu_items = {str(home): home, str(about): about, str(contact): contact}
 def get_menu(items):
-	for i in len(items):
-		if i != 0:
-			items[i] = f"""<li><a href='//items[i]'>items[i]</a></li>"""
+	for i in items:
+		if items[i] is not home:
+			items[i] = f"""<li><a href='//{items[i]}'>{items[i].upper()}</a></li>"""
 		else:
-			items[i] = f"""<li><a href='//'>items[i]</a></li>"""
+			items[i] = f"""<li><a href='//'>{items[i].upper()}</a></li>"""
 	return items
 page.body += f"""
 # create an absolute element which acts as a full screen
