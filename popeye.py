@@ -20,8 +20,6 @@ from src.blackNwhite import bnw as blackNwhite
 
 from src.doubleoshadows import doubleOshadow
 
-from src.account.users import user
-
 # eof
 #
 #
