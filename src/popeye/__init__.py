@@ -3,150 +3,176 @@ from src.style import Style
 from src.cars import gallery
 
 css = f"""
-	#popeye {{
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-	}}
-	#vroom {{
-		background-color: #8926;
-		width: 100px;
-		height: 100px;
-		border-radius: 50vmin;
-	}}
- 	#login, #signup {{
-		width: 400px;
-  		height: 400px;
-    		display: flex;
-      		align-items: center;
-		justify-content: center;
-  	}}
-   	#loginlink, #signuplink {{
-		text-decoration: none;
-  		color: #199b;
-    		background: transparent;
-      		border: 4px solid;
-		border-radius: 1em;
-  		padding: 1rem 2rem;
-    		margin: 0.5rem 0;
-      		width: 100%;
-		text-align: center;
-    	}}
-     	#greetinglinks {{
-      		display: flex;
-		align-items: center;
-  		justify-content: space-evenly;
-    	}}
-     	#greeting {{
-      		font-size: 4rem;
-		color: #199b;
-  	}}
-   * {{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+.App-NM {{
+position: absolute;
+top: 0;
+left: 0;
+color: #1192CC87;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
 }}
-
-.hero {{
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
-	position: relative;
-	padding: 0 5%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.Nav-NM {{
+position: absolute;
+top: 0;
+width: 420px;
+height: 187px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #0000;
 }}
-
-nav {{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px 8%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}}
-
-nav .logo {{
-	width: 80px;
-}}
-
-nav ul li {{
-	list-style: none;
-	display: inline-block;
-	margin-left: 40px;
-
-}}
-
-nav ul li a {{
-	text-decoration: none;
-	color: #fff;
-	font-size: 17px;
-}}
-
-.content {{
-	text-align: center;
-}}
-
-.content h1 {{
-	font-size: 160px;
-	color: #fff;
-	font-weight: 800;
-	transition: 0.5s;
-}}
-
-.content h1:hover {{
-	-webkit-text-stroke: 2px #fff;
-	color: transparent;
-	transition: 0.5s;
-}}
-
-.content a {{
-	text-decoration: none;
-	display: inline-block;
-	color: #fff;
-	font-size: 24px;
-	border: 2px solid;
-	padding: 14px 70px;
-	border-radius: 50px;
-	margin-top: 20px;
-}}
-
-.back-video {{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-}}
-
-@media (min-aspect-ratio: 16/9) {{
-	.bck-video {{
-		width: 100%;
-		height: auto;
-	}}
-}}
-
-@media (max-aspect-ratio: 16/9) {{
-	.back-video {{
-		width: auto;
-		height: 100%;
-	}}
+.Nav-NM div {{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+box-shadow: 0 0 0 26px inset;
 }}
 """
+# 	#popeye {{
+# 		position: absolute;
+# 		top: 0;
+# 		right: 0;
+# 		bottom: 0;
+# 		left: 0;
+# 		display: flex;
+# 		align-items: center;
+# 		justify-content: center;
+# 		flex-direction: column;
+# 	}}
+# 	#vroom {{
+# 		background-color: #8926;
+# 		width: 100px;
+# 		height: 100px;
+# 		border-radius: 50vmin;
+# 	}}
+#  	#login, #signup {{
+# 		width: 400px;
+#   		height: 400px;
+#     		display: flex;
+#       		align-items: center;
+# 		justify-content: center;
+#   	}}
+#    	#loginlink, #signuplink {{
+# 		text-decoration: none;
+#   		color: #199b;
+#     		background: transparent;
+#       		border: 4px solid;
+# 		border-radius: 1em;
+#   		padding: 1rem 2rem;
+#     		margin: 0.5rem 0;
+#       		width: 100%;
+# 		text-align: center;
+#     	}}
+#      	#greetinglinks {{
+#       		display: flex;
+# 		align-items: center;
+#   		justify-content: space-evenly;
+#     	}}
+#      	#greeting {{
+#       		font-size: 4rem;
+# 		color: #199b;
+#   	}}
+#    * {{
+# 	margin: 0;
+# 	padding: 0;
+# 	box-sizing: border-box;
+# }}
+
+# .hero {{
+# 	width: 100%;
+# 	height: 100vh;
+# 	background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+# 	position: relative;
+# 	padding: 0 5%;
+# 	display: flex;
+# 	align-items: center;
+# 	justify-content: center;
+# }}
+
+# nav {{
+# 	width: 100%;
+# 	position: absolute;
+# 	top: 0;
+# 	left: 0;
+# 	padding: 20px 8%;
+# 	display: flex;
+# 	align-items: center;
+# 	justify-content: space-between;
+# }}
+
+# nav .logo {{
+# 	width: 80px;
+# }}
+
+# nav ul li {{
+# 	list-style: none;
+# 	display: inline-block;
+# 	margin-left: 40px;
+
+# }}
+
+# nav ul li a {{
+# 	text-decoration: none;
+# 	color: #fff;
+# 	font-size: 17px;
+# }}
+
+# .content {{
+# 	text-align: center;
+# }}
+
+# .content h1 {{
+# 	font-size: 160px;
+# 	color: #fff;
+# 	font-weight: 800;
+# 	transition: 0.5s;
+# }}
+
+# .content h1:hover {{
+# 	-webkit-text-stroke: 2px #fff;
+# 	color: transparent;
+# 	transition: 0.5s;
+# }}
+
+# .content a {{
+# 	text-decoration: none;
+# 	display: inline-block;
+# 	color: #fff;
+# 	font-size: 24px;
+# 	border: 2px solid;
+# 	padding: 14px 70px;
+# 	border-radius: 50px;
+# 	margin-top: 20px;
+# }}
+
+# .back-video {{
+# 	position: absolute;
+# 	right: 0;
+# 	bottom: 0;
+# 	z-index: -1;
+# }}
+
+# @media (min-aspect-ratio: 16/9) {{
+# 	.bck-video {{
+# 		width: 100%;
+# 		height: auto;
+# 	}}
+# }}
+
+# @media (max-aspect-ratio: 16/9) {{
+# 	.back-video {{
+# 		width: auto;
+# 		height: 100%;
+# 	}}
+# }}
+# """
+
+# vr0000m = " vroooom ".upper();
+
 style = Style(extra_css=css)
-
-vr0000m = " vroooom ".upper();
-
-#body = "<div id='popeye'></div>"
-
 page = Page(title="Home", body="", style=style, filename='index.html')
 
 def create_element(tag: str, id: str):
@@ -201,18 +227,22 @@ scripts = [
   {''.join(gallery.image_elements)}
   </div>
   """
-
+home, about, contact = 'home', 'about', 'contact'
 #page.body += f"""<script>{''.join(scripts)}</script>"""
-
+menuitems = (str(home), str(about), str(contact))
 page.body += f"""
-# hero landing
-<div class='landing'>
-<h2>one liner like a quote or something</h2>
-<button>something funny</button>
+# create an absolute element which acts as a full screen
+<div class='App-NEON-MONKEY'>
+<div class='Nav-NM'>
+<div>
+<!-- branding -->
+<img src='#' alt='neon monkey' //>
 </div>
-<div class='about-us'>
-<h2>about</h2>
-<p>about the page and all</p>
+<ul>
+{for i in range(len(menu_items)):}
+	<li><a href='//{menu_items[i] if i != 0 else None}'>{menu_items[i]}</a></li>
+</ul>
+</div>
 </div>
 """
 
