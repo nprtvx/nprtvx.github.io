@@ -31,6 +31,13 @@ align-items: center;
 justify-content: space-evenly;
 box-shadow: 0 0 0 26px inset;
 }}
+#menu-item {{
+list-style: none;
+}}
+#menu-item a {{
+text-decoration: none;
+color: 
+}}
 """
 # 	#popeye {{
 # 		position: absolute;
@@ -233,14 +240,14 @@ home, about, contact = 'home', 'about', 'contact'
 menu_items = {str(home): home, str(about): about, str(contact): contact}
 
 page.body += f"""
-# create an absolute element which acts as a full screen
-<div class='App-NEON-MONKEY'>
+<!-- create an absolute element which acts as a full screen -->
+<div class='App-NM'>
 <div class='Nav-NM'>
 <div>
 <!-- branding -->
 <img src='#' alt='neon monkey' //>
 </div>
-<ul>
+<ul id='menu-items'>
 <li><a href='/'>{menu_items[home].upper()}</a></li>
 <li><a href='/{menu_items[about]}'>{menu_items[about].upper()}</a></li>
 <li><a href='/{menu_items[contact]}'>{menu_items[contact].upper()}</a></li>
