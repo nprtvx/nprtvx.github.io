@@ -238,6 +238,7 @@ def get_menu(items):
 		else:
 			items[i] = f"""<li><a href='//'>{items[i].upper()}</a></li>"""
 	return (i for i in items)
+menu = get_menu(menu_items)
 page.body += f"""
 # create an absolute element which acts as a full screen
 <div class='App-NEON-MONKEY'>
@@ -247,7 +248,7 @@ page.body += f"""
 <img src='#' alt='neon monkey' //>
 </div>
 <ul>
-{get_menu(menu_items)}
+{menu}
 </ul>
 </div>
 </div>
