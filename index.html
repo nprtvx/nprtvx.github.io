@@ -18,7 +18,9 @@
 position: absolute;
 top: 0;
 left: 0;
-color: #1192CC87;
+right: 0;
+bottom: 0;
+color: #abcd;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -34,28 +36,26 @@ align-items: center;
 justify-content: space-between;
 background-color: #0000;
 }
-.Nav-NM div {
+#brand, #menu-items {
 width: 50%;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
 box-shadow: 0 0 0 26px inset;
 }
-#menu-item {
+#menu-items {
 list-style: none;
 }
-#menu-item a {
+#menu-items a {
 text-decoration: none;
-color: 
+color: #abcd;
 }
 
 	</style></head>
   		<body>
-<!-- create an absolute element which acts as a full screen -->
 <div class='App-NM'>
 <div class='Nav-NM'>
-<div>
-<!-- branding -->
+<div id='brand'>
 <img src='#' alt='neon monkey' //>
 </div>
 <ul id='menu-items'>
