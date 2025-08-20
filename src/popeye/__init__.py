@@ -248,9 +248,9 @@ page.body += f"""
 <img src='#' alt='neon monkey' //>
 </div>
 <ul>
-<li><a href='//'>{menu_items[0].upper()}</a></li>
-<li><a href='//{menu_items[1]}'>{menu_items[1].upper()}</a></li>
-<li><a href='//{menu_items[2]}'>{menu_items[2].upper()}</a></li>
+<li><a href='//'>{menu_items[home].upper()}</a></li>
+<li><a href='//{menu_items[about]}'>{menu_items[about].upper()}</a></li>
+<li><a href='//{menu_items[contact]}'>{menu_items[contact].upper()}</a></li>
 </ul>
 </div>
 </div>
