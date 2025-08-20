@@ -10,17 +10,15 @@ class Style:
     def render(self):
         self.default_style = f"""
 		* {{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 		}}
-
 		body {{
-				background-img: linear-gradient({self.body_bg}, {self.body_bg});
-				color: {self.text_color};
-				overflow: hidden;
+  		background: linear-gradient({self.body_bg}, {self.body_bg});
+		color: {self.text_color};
+		overflow: hidden;
 		}}
-
 	"""
         return f"""
             {self.default_style}
