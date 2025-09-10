@@ -47,31 +47,25 @@ border-radius: 50%;
 box-shadow: 0 0 8px 0 inset;
 margin: 8px;
 }}
+
+#app-element {{
+width: 250px;
+height: 250px;
+border-radius: 26px;
+background-color: #11269287;
+}}
 """
 
 home, about, contact = 'home', 'about', 'contact'
 #page.body += f"""<script>{''.join(scripts)}</script>"""
 menu_items = {str(home): home, str(about): about, str(contact): contact}
 
-body = f"""
-<div class='App-NM' id='App-NM'>
-<div class='Nav-NM'>
-<div id='brand'>
-<img src='#' alt='neon monkey' //>
-</div>
-<ul id='menu-items'>
-<li><a href='/'>{menu_items[home].upper()}</a></li>
-<li><a href='/{menu_items[about]}'>{menu_items[about].upper()}</a></li>
-<li><a href='/{menu_items[contact]}'>{menu_items[contact].upper()}</a></li>
-</ul>
-</div>
-<script>
-const nmads = document.createElement('div');
-nmads.setAttribute('id', 'nm-ads');
-const nmapp = document.getElementById('App-NM');
-nmapp.append(nmads*8);
-</script>
-</div>
+body = f"""<div class='App-NM' id='App-NM'></div>"""
+script = f"""
+const appNM = document.getElementById('App-NM');
+const appelement = document.createElement('div');
+appelement.setAttribute('id', 'app-elemenet');
+appNM.append(appelement);
 """
 style = Style(extra_css=css)
 page = Page(title="Home", body=body, style=style, filename='index.html')
