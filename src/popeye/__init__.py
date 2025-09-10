@@ -61,14 +61,18 @@ home, about, contact = 'home', 'about', 'contact'
 menu_items = {str(home): home, str(about): about, str(contact): contact}
 
 body = f"""<div class='App-NM' id='App-NM'></div>"""
+
 script = f"""
+<script>
 const appNM = document.getElementById('App-NM');
 const appelement = document.createElement('div');
 appelement.setAttribute('id', 'app-elemenet');
 appNM.append(appelement);
+</script>
 """
+
 style = Style(extra_css=css)
-page = Page(title="Home", body=body, style=style, filename='index.html')
+page = Page(title="Home", body=body+script, style=style, filename='index.html')
 
 # 	#popeye {{
 # 		position: absolute;
