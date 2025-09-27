@@ -63,7 +63,7 @@ menu_items = {str(home): home, str(about): about, str(contact): contact}
 body = f"""<div class='App-NM' id='App-NM'></div>"""
 
 script = f"""
-<script>
+<script src="assets/js/index.js">
 const appNM = document.getElementById('App-NM');
 const appelement = document.createElement('div');
 appelement.setAttribute('id', 'app-elemenet');
