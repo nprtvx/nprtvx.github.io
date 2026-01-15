@@ -1,0 +1,38 @@
+.btn-primary {
+  /* Layout & Sizing: Minimum 44x44px for touch targets */
+  padding: 12px 24px;
+  min-width: 120px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Styling: 2026 Dopamine Gradient & Depth */
+  background: linear-gradient(135deg, #261192, #4b2bd9);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  
+  /* Depth & Interaction */
+  box-shadow: 0 4px 15px rgba(38, 17, 146, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+/* Hover & Focus States */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1e0d75, #3a21a8);
+  box-shadow: 0 6px 20px rgba(38, 17, 146, 0.4);
+}
+
+.btn-primary:focus-visible {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}

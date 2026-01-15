@@ -1,0 +1,85 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background: linear-gradient(45deg, #080808, #080808);
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+flex-direction: column;
+gap: 2em;
+}
+h1{
+font-size: 2.6em;
+color: #261192;
+text-transform: capitalize;
+}
+h1 span {
+text-transform: uppercase;
+}
+button {
+padding: 0.5em 1em;
+border-radius: 0.26em;
+background: linear-gradient(#261192);
+border: none;
+cursor: pointer;
+font-size: 1.2em;
+letter-spacing: 0.11em;
+color: #fff8;
+text-transform: capitalize;
+margin: 0 0.5em;
+}
+
+@media screen and (max-width: 420px) {
+h1{
+font-size: 1.2em;
+}
+button{
+font-size: 1em;
+}
+}
+
+/* Container Layout */
+.nav-auth {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Base Button Styles */
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Primary (Sign Up) - Solid Style */
+.btn-primary {
+  background-color: #261192;
+  color: #ffffff;
+  border: 2px solid #261192;
+}
+
+.btn-primary:hover {
+  background-color: #1e0d75;
+  border-color: #1e0d75;
+}
+
+/* Secondary (Login) - Ghost/Outline Style */
+.btn-secondary {
+  background-color: transparent;
+  color: #261192;
+  border: 2px solid #261192;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(38, 17, 146, 0.05);
+}
